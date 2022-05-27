@@ -16,5 +16,10 @@ namespace CuoiKy_Winform
         {
             InitializeComponent();
         }
+
+        private void pcbCar1_Click(object sender, EventArgs e)
+        {
+        
+        }
     }
 }

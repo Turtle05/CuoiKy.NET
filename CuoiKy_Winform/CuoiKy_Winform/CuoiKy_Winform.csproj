@@ -58,6 +58,12 @@
     <Compile Include="A_Class.Designer.cs">
       <DependentUpon>A_Class.cs</DependentUpon>
     </Compile>
+    <Compile Include="Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </Compile>
     <Compile Include="Coupe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     <EmbeddedResource Include="A_Class.resx">
       <DependentUpon>A_Class.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Coupe.resx">
       <DependentUpon>Coupe.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,8 +174,10 @@
     <None Include="Resources\tải xuống1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\A200.jpg" />
-    <None Include="Resources\A220.jpg" />
+    <Content Include="Resources\A200.jpg" />
+    <Content Include="Resources\A220.jpg" />
+    <None Include="Resources\A45.jpg" />
+    <Content Include="Resources\C43.jpg" />
     <Content Include="Resources\Image\A-Class\A200.jpg" />
     <Content Include="Resources\Image\A-Class\A220.jpg" />
     <Content Include="Resources\Image\A-Class\A45.jpg" />

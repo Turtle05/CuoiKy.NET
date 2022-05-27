@@ -48,3 +48,4 @@ C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy
 C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.CoreCompileInputs.cache
 C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.exe
 C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.pdb
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Booking.resources
