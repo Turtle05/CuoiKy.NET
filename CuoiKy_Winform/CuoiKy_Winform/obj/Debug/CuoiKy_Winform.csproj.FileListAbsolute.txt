@@ -23,3 +23,9 @@ D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csp
 D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.CoreCompileInputs.cache
 D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.exe
 D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.pdb
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.All_CarClass.resources
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.A_Class.resources
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Coupe.resources
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Home.resources
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Sedan.resources
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.SUV.resources
