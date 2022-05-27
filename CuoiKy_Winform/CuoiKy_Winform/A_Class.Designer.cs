@@ -35,13 +35,13 @@ namespace CuoiKy_Winform
             this.rtxtA45 = new System.Windows.Forms.RichTextBox();
             this.rtxtA220 = new System.Windows.Forms.RichTextBox();
             this.rtxtA200 = new System.Windows.Forms.RichTextBox();
-            this.pcbA45 = new System.Windows.Forms.PictureBox();
-            this.pcbA220 = new System.Windows.Forms.PictureBox();
-            this.pcbA200 = new System.Windows.Forms.PictureBox();
+            this.A45 = new System.Windows.Forms.PictureBox();
+            this.A220 = new System.Windows.Forms.PictureBox();
+            this.A200 = new System.Windows.Forms.PictureBox();
             this.pnlAClass.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbA45)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbA220)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbA200)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A220)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A200)).BeginInit();
             this.SuspendLayout();
             // 
             // lbAClass
@@ -60,9 +60,9 @@ namespace CuoiKy_Winform
             this.pnlAClass.Controls.Add(this.rtxtA45);
             this.pnlAClass.Controls.Add(this.rtxtA220);
             this.pnlAClass.Controls.Add(this.rtxtA200);
-            this.pnlAClass.Controls.Add(this.pcbA45);
-            this.pnlAClass.Controls.Add(this.pcbA220);
-            this.pnlAClass.Controls.Add(this.pcbA200);
+            this.pnlAClass.Controls.Add(this.A45);
+            this.pnlAClass.Controls.Add(this.A220);
+            this.pnlAClass.Controls.Add(this.A200);
             this.pnlAClass.Location = new System.Drawing.Point(6, 58);
             this.pnlAClass.Name = "pnlAClass";
             this.pnlAClass.Size = new System.Drawing.Size(1065, 490);
@@ -92,36 +92,36 @@ namespace CuoiKy_Winform
             this.rtxtA200.TabIndex = 1;
             this.rtxtA200.Text = "";
             // 
-            // pcbA45
+            // A45
             // 
-            this.pcbA45.Image = global::CuoiKy_Winform.Properties.Resources.A45;
-            this.pcbA45.Location = new System.Drawing.Point(40, 572);
-            this.pcbA45.Name = "pcbA45";
-            this.pcbA45.Size = new System.Drawing.Size(290, 200);
-            this.pcbA45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbA45.TabIndex = 0;
-            this.pcbA45.TabStop = false;
+            this.A45.Image = global::CuoiKy_Winform.Properties.Resources.A45;
+            this.A45.Location = new System.Drawing.Point(40, 572);
+            this.A45.Name = "A45";
+            this.A45.Size = new System.Drawing.Size(290, 200);
+            this.A45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A45.TabIndex = 0;
+            this.A45.TabStop = false;
             // 
-            // pcbA220
+            // A220
             // 
-            this.pcbA220.Image = ((System.Drawing.Image)(resources.GetObject("pcbA220.Image")));
-            this.pcbA220.Location = new System.Drawing.Point(40, 303);
-            this.pcbA220.Name = "pcbA220";
-            this.pcbA220.Size = new System.Drawing.Size(290, 200);
-            this.pcbA220.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbA220.TabIndex = 0;
-            this.pcbA220.TabStop = false;
+            this.A220.Image = ((System.Drawing.Image)(resources.GetObject("A220.Image")));
+            this.A220.Location = new System.Drawing.Point(40, 303);
+            this.A220.Name = "A220";
+            this.A220.Size = new System.Drawing.Size(290, 200);
+            this.A220.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A220.TabIndex = 0;
+            this.A220.TabStop = false;
             // 
-            // pcbA200
+            // A200
             // 
-            this.pcbA200.Image = global::CuoiKy_Winform.Properties.Resources.A200;
-            this.pcbA200.Location = new System.Drawing.Point(40, 30);
-            this.pcbA200.Name = "pcbA200";
-            this.pcbA200.Size = new System.Drawing.Size(290, 200);
-            this.pcbA200.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pcbA200.TabIndex = 0;
-            this.pcbA200.TabStop = false;
-            this.pcbA200.Click += new System.EventHandler(this.pcbA200_Click);
+            this.A200.Image = global::CuoiKy_Winform.Properties.Resources.A200;
+            this.A200.Location = new System.Drawing.Point(40, 30);
+            this.A200.Name = "A200";
+            this.A200.Size = new System.Drawing.Size(290, 200);
+            this.A200.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.A200.TabIndex = 0;
+            this.A200.TabStop = false;
+            this.A200.Click += new System.EventHandler(this.A200_Click);
             // 
             // A_Class
             // 
@@ -136,9 +136,9 @@ namespace CuoiKy_Winform
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "A_Class";
             this.pnlAClass.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pcbA45)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbA220)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbA200)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A220)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.A200)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -147,11 +147,11 @@ namespace CuoiKy_Winform
 
         private System.Windows.Forms.Label lbAClass;
         private System.Windows.Forms.Panel pnlAClass;
-        private System.Windows.Forms.PictureBox pcbA200;
+        private System.Windows.Forms.PictureBox A200;
         private System.Windows.Forms.RichTextBox rtxtA45;
         private System.Windows.Forms.RichTextBox rtxtA220;
         private System.Windows.Forms.RichTextBox rtxtA200;
-        private System.Windows.Forms.PictureBox pcbA45;
-        private System.Windows.Forms.PictureBox pcbA220;
+        private System.Windows.Forms.PictureBox A45;
+        private System.Windows.Forms.PictureBox A220;
     }
 }

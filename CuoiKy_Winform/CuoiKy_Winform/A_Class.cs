@@ -20,12 +20,12 @@ namespace CuoiKy_Winform
         public A_Class()
         {
             InitializeComponent();
-            pcbA200.Image = Image.FromFile(pathA200);
-            pcbA220.Image = Image.FromFile(pathA220);
-            pcbA45.Image = Image.FromFile(pathA45);
+            A200.Image = Image.FromFile(pathA200);
+            A220.Image = Image.FromFile(pathA220);
+            A45.Image = Image.FromFile(pathA45);
         }
 
-        private void pcbA200_Click(object sender, EventArgs e)
+        private void A200_Click(object sender, EventArgs e)
         {
             frmStatus = "Hidden";
             new Booking().Show();

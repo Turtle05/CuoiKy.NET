@@ -177,7 +177,6 @@
     <Content Include="Resources\A200.jpg" />
     <Content Include="Resources\A220.jpg" />
     <None Include="Resources\A45.jpg" />
-    <Content Include="Resources\C43.jpg" />
     <Content Include="Resources\Image\A-Class\A200.jpg" />
     <Content Include="Resources\Image\A-Class\A220.jpg" />
     <Content Include="Resources\Image\A-Class\A45.jpg" />
