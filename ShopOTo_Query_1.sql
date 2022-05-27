@@ -1,4 +1,5 @@
-﻿create table member
+﻿use ShopOTo
+create table member
 (
 member_id int identity(1,1) primary key,
 member_name nvarchar(255),
@@ -68,7 +69,7 @@ total_price float
 
 -- Insert in to member
 insert into member
-values (1,N'Nguyễn Nho Song Hoàng',N'Nam','VietNam',N'Đà Nẵng','0905000001','abc123@gmail.com','123456','ADMIN');
+values (N'Nguyễn Nho Song Hoàng',N'Nam','VietNam',N'Đà Nẵng','0905000001','abc123@gmail.com','123456','ADMIN');
 insert into member
 values (N'Lê Huy Ngọ',N'Nam','VietNam',N'Đà Nẵng','0905000002','abc1234@gmail.com','123456','USER');
 insert into member
@@ -95,6 +96,36 @@ insert into member
 values (N'Nguyễn Tiến Hùng',N'Nam','VietNam',N'Quảng Bình','0905000013','abcdefg1234@gmail.com','123456','USER');
 insert into member
 values (N'Đặng Huỳnh Khánh Dương',N'Nam','VietNam',N'Đà Nẵng','0905000014','abcdefgh1234@gmail.com','123456','USER');
+
+-- Insert car_class 
+insert into car_class 
+values ('A', 'A Class', 'Sedan');
+insert into car_class 
+values ('AMG-C', 'AMG Class', 'Coupe');
+insert into car_class 
+values ('AMG-GT', 'AMG Class', 'Coupe');
+insert into car_class 
+values ('C', 'C Class', 'Sedan');
+insert into car_class 
+values ('E', 'E Class', 'Sedan');
+insert into car_class 
+values ('S', 'S Class', 'Sedan');
+insert into car_class 
+values ('EQS', 'EQS Class', 'Sedan');
+insert into car_class 
+values ('C-Coupe', 'C Class', 'Coupe');
+insert into car_class 
+values ('E-Coupe', 'E Class', 'Coupe');
+insert into car_class 
+values ('G', 'G Class', 'SUV');
+insert into car_class 
+values ('GLC', 'GLC Class', 'SUV');
+insert into car_class 
+values ('GLE', 'GLE Class', 'SUV');
+insert into car_class 
+values ('GLS', 'GLS Class', 'SUV');
+insert into car_class 
+values ('EQB', 'EQB Class', 'SUV');
 
 -- Create procedure
 create procedure Check_Email

@@ -10,3 +10,16 @@ C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Deb
 C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.pdb
 C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_SignIn.resources
 C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_SignUp.resources
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\bin\Debug\CuoiKy_Winform.exe.config
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\bin\Debug\CuoiKy_Winform.exe
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\bin\Debug\CuoiKy_Winform.pdb
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.AssemblyReference.cache
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.SuggestedBindingRedirects.cache
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.cover.resources
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_SignIn.resources
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_SignUp.resources
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Properties.Resources.resources
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.GenerateResource.cache
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.CoreCompileInputs.cache
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.exe
+D:\.NET CK\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.pdb
