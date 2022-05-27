@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CuoiKy_Winform
 {
-    public partial class cover : Form
+    public partial class Cover : Form
     {
-        public cover()
+        public Cover()
         {
             InitializeComponent();
         }

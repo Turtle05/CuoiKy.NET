@@ -16,7 +16,7 @@ namespace CuoiKy_Winform
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new cover());
+            Application.Run(new A_Class());
         }
     }
 }

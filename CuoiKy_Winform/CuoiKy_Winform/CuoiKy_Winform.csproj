@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cover.cs">
+    <Compile Include="All_CarClass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cover.Designer.cs">
-      <DependentUpon>cover.cs</DependentUpon>
+    <Compile Include="All_CarClass.Designer.cs">
+      <DependentUpon>All_CarClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="A_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="A_Class.Designer.cs">
+      <DependentUpon>A_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coupe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coupe.Designer.cs">
+      <DependentUpon>Coupe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cover.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cover.Designer.cs">
+      <DependentUpon>Cover.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_SignIn.cs">
       <SubType>Form</SubType>
@@ -72,14 +90,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="cover.resx">
-      <DependentUpon>cover.cs</DependentUpon>
+    <Compile Include="Sedan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sedan.Designer.cs">
+      <DependentUpon>Sedan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SUV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SUV.Designer.cs">
+      <DependentUpon>SUV.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="All_CarClass.resx">
+      <DependentUpon>All_CarClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="A_Class.resx">
+      <DependentUpon>A_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coupe.resx">
+      <DependentUpon>Coupe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cover.resx">
+      <DependentUpon>Cover.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_SignIn.resx">
       <DependentUpon>Form_SignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_SignUp.resx">
       <DependentUpon>Form_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,6 +133,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Sedan.resx">
+      <DependentUpon>Sedan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SUV.resx">
+      <DependentUpon>SUV.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -115,6 +163,46 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tải xuống1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A220.jpg" />
+    <None Include="Resources\A45.jpg" />
+    <None Include="Resources\A200.jpg" />
+    <Content Include="Resources\Image\A-Class\A200.jpg" />
+    <Content Include="Resources\Image\A-Class\A220.jpg" />
+    <Content Include="Resources\Image\A-Class\A45.jpg" />
+    <Content Include="Resources\Image\AMG-GT Class\AMG-GT 2 door.jpg" />
+    <Content Include="Resources\Image\AMG-GT Class\AMG-GT 4 door.jpeg" />
+    <Content Include="Resources\Image\C-Class\AMG-C Coupe\AMG-C43 Coupe.jpg" />
+    <Content Include="Resources\Image\C-Class\AMG-C Coupe\AMG-C63 Coupe.jpg" />
+    <Content Include="Resources\Image\C-Class\C Coupe\C200 Coupe.jpg" />
+    <Content Include="Resources\Image\C-Class\C Coupe\C300 Coupe.jpg" />
+    <Content Include="Resources\Image\C-Class\C200.jpg" />
+    <Content Include="Resources\Image\C-Class\C300.jpg" />
+    <Content Include="Resources\Image\C-Class\C43.jpg" />
+    <Content Include="Resources\Image\E-Class\E Coupe\E300 Coupe.jpg" />
+    <Content Include="Resources\Image\E-Class\E Coupe\E400 Coupe.jpg" />
+    <Content Include="Resources\Image\E-Class\E200.jpg" />
+    <Content Include="Resources\Image\E-Class\E300.jpg" />
+    <Content Include="Resources\Image\E-Class\E350.jpg" />
+    <Content Include="Resources\Image\E-Class\E43.jpg" />
+    <Content Include="Resources\Image\EQB-Class\EQB.jpg" />
+    <Content Include="Resources\Image\EQS-Class\EQS.jpg" />
+    <Content Include="Resources\Image\G-Class\G400.jpg" />
+    <Content Include="Resources\Image\G-Class\G63.jpg" />
+    <Content Include="Resources\Image\GLC-Class\GLC300.jpg" />
+    <Content Include="Resources\Image\GLC-Class\GLC350.jpg" />
+    <Content Include="Resources\Image\GLC-Class\GLC400.jpg" />
+    <Content Include="Resources\Image\GLE-Class\GLE300.jpg" />
+    <Content Include="Resources\Image\GLE-Class\GLE400.jpg" />
+    <Content Include="Resources\Image\GLE-Class\GLE500.jpeg" />
+    <Content Include="Resources\Image\GLS-Class\GLS400.jpeg" />
+    <Content Include="Resources\Image\GLS-Class\GLS500.jpg" />
+    <Content Include="Resources\Image\S-Class\S450.jpg" />
+    <Content Include="Resources\Image\S-Class\S500.jpg" />
+    <Content Include="Resources\Image\S-Class\S600.jpg" />
+    <Content Include="Resources\Image\S-Class\S65.jpg" />
+    <Content Include="Resources\Image\S-Class\S680.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
