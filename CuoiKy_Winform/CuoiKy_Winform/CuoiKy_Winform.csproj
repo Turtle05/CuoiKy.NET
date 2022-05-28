@@ -52,6 +52,18 @@
     <Compile Include="All_CarClass.Designer.cs">
       <DependentUpon>All_CarClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="AMG-C_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AMG-C_Class.Designer.cs">
+      <DependentUpon>AMG-C_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AMG-GT_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AMG-GT_Class.Designer.cs">
+      <DependentUpon>AMG-GT_Class.cs</DependentUpon>
+    </Compile>
     <Compile Include="A_Class.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +88,42 @@
     <Compile Include="Cover.Designer.cs">
       <DependentUpon>Cover.cs</DependentUpon>
     </Compile>
+    <Compile Include="C_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Class.Designer.cs">
+      <DependentUpon>C_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_Coupe_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_Coupe_Class.Designer.cs">
+      <DependentUpon>C_Coupe_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EQB_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQB_Class.Designer.cs">
+      <DependentUpon>EQB_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EQS_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EQS_Class.Designer.cs">
+      <DependentUpon>EQS_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_Class.Designer.cs">
+      <DependentUpon>E_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="E_Coupe_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="E_Coupe_Class.Designer.cs">
+      <DependentUpon>E_Coupe_Class.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +135,30 @@
     </Compile>
     <Compile Include="Form_SignUp.Designer.cs">
       <DependentUpon>Form_SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLC_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLC_Class.Designer.cs">
+      <DependentUpon>GLC_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLE_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLE_Class.Designer.cs">
+      <DependentUpon>GLE_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GLS_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GLS_Class.Designer.cs">
+      <DependentUpon>GLS_Class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="G_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="G_Class.Designer.cs">
+      <DependentUpon>G_Class.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -113,8 +185,20 @@
     <Compile Include="SUV.Designer.cs">
       <DependentUpon>SUV.cs</DependentUpon>
     </Compile>
+    <Compile Include="S_Class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S_Class.Designer.cs">
+      <DependentUpon>S_Class.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="All_CarClass.resx">
       <DependentUpon>All_CarClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMG-C_Class.resx">
+      <DependentUpon>AMG-C_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AMG-GT_Class.resx">
+      <DependentUpon>AMG-GT_Class.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="A_Class.resx">
       <DependentUpon>A_Class.cs</DependentUpon>
@@ -128,11 +212,41 @@
     <EmbeddedResource Include="Cover.resx">
       <DependentUpon>Cover.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="C_Class.resx">
+      <DependentUpon>C_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_Coupe_Class.resx">
+      <DependentUpon>C_Coupe_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQB_Class.resx">
+      <DependentUpon>EQB_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EQS_Class.resx">
+      <DependentUpon>EQS_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_Class.resx">
+      <DependentUpon>E_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="E_Coupe_Class.resx">
+      <DependentUpon>E_Coupe_Class.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_SignIn.resx">
       <DependentUpon>Form_SignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_SignUp.resx">
       <DependentUpon>Form_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLC_Class.resx">
+      <DependentUpon>GLC_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLE_Class.resx">
+      <DependentUpon>GLE_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GLS_Class.resx">
+      <DependentUpon>GLS_Class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="G_Class.resx">
+      <DependentUpon>G_Class.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
@@ -147,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SUV.resx">
       <DependentUpon>SUV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S_Class.resx">
+      <DependentUpon>S_Class.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -176,7 +293,41 @@
   <ItemGroup>
     <Content Include="Resources\A200.jpg" />
     <Content Include="Resources\A220.jpg" />
+    <None Include="Resources\S680.jpg" />
+    <None Include="Resources\S65.jpg" />
+    <None Include="Resources\S600.jpg" />
+    <None Include="Resources\S500.jpg" />
+    <None Include="Resources\S450.jpg" />
     <None Include="Resources\A45.jpg" />
+    <None Include="Resources\C200.jpg" />
+    <None Include="Resources\C300.jpg" />
+    <None Include="Resources\C43.jpg" />
+    <None Include="Resources\E200.jpg" />
+    <None Include="Resources\E300.jpg" />
+    <None Include="Resources\E350.jpg" />
+    <None Include="Resources\E43.jpg" />
+    <None Include="Resources\EQS.jpg" />
+    <None Include="Resources\GLC300.jpg" />
+    <None Include="Resources\GLC350.jpg" />
+    <None Include="Resources\GLC400.jpg" />
+    <None Include="Resources\G400.jpg" />
+    <None Include="Resources\G63.jpg" />
+    <None Include="Resources\AMG-GT 2 door.jpg" />
+    <None Include="Resources\AMG-GT 2 door1.jpg" />
+    <None Include="Resources\AMG-GT 4 door.jpeg" />
+    <None Include="Resources\E300 Coupe.jpg" />
+    <None Include="Resources\E400 Coupe.jpg" />
+    <None Include="Resources\AMG-C43 Coupe.jpg" />
+    <None Include="Resources\AMG-C63 Coupe.jpg" />
+    <None Include="Resources\C200 Coupe.jpg" />
+    <None Include="Resources\E400 Coupe1.jpg" />
+    <None Include="Resources\C300 Coupe.jpg" />
+    <None Include="Resources\EQB.jpg" />
+    <None Include="Resources\GLE300.jpg" />
+    <None Include="Resources\GLE400.jpg" />
+    <None Include="Resources\GLE500.jpeg" />
+    <None Include="Resources\GLS400.jpeg" />
+    <None Include="Resources\GLS500.jpg" />
     <Content Include="Resources\Image\A-Class\A200.jpg" />
     <Content Include="Resources\Image\A-Class\A220.jpg" />
     <Content Include="Resources\Image\A-Class\A45.jpg" />

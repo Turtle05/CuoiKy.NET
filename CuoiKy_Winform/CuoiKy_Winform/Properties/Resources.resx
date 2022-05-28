@@ -118,25 +118,127 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="A220" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A220.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="E43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\E43.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tải xuống (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tải xuống (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="C300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLE400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GLE400.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E350" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\E350.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C300 Coupe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C300 Coupe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C200 Coupe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C200 Coupe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLS400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GLS400.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="tải xuống1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tải xuống1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="G400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G400.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tải xuống" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tải xuống.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="A200" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\A200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="E300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\E300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E400 Coupe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\E400 Coupe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="G63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\G63.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLC350" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GLC350.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EQS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EQS.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A220" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\A220.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AMG-GT 4 door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMG-GT 4 door.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S680" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S680.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A45" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\A45.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EQB" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EQB.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AMG-GT 2 door1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMG-GT 2 door1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S65.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLE500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GLE500.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AMG-C43 Coupe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMG-C43 Coupe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AMG-GT 2 door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMG-GT 2 door.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AMG-C63 Coupe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\AMG-C63 Coupe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\E200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E300 Coupe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\E300 Coupe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S450" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S450.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLE300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GLE300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E400 Coupe1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\E400 Coupe1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLC300" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GLC300.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\A200.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="S600" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\S600.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLC400" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GLC400.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="C43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\C43.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GLS500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GLS500.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
