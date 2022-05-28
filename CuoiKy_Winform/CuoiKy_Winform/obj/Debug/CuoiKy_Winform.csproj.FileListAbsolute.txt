@@ -49,36 +49,3 @@ C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy
 C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.exe
 C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.pdb
 C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Booking.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\bin\Debug\CuoiKy_Winform.exe.config
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\bin\Debug\CuoiKy_Winform.exe
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\bin\Debug\CuoiKy_Winform.pdb
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.AssemblyReference.cache
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.SuggestedBindingRedirects.cache
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.All_CarClass.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.A_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Booking.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Coupe.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Cover.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_SignIn.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_SignUp.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Home.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Properties.Resources.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Sedan.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.SUV.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.GenerateResource.cache
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.csproj.CoreCompileInputs.cache
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.exe
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.pdb
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.C_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.E_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.S_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.EQS_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.GLC_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.GLE_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.GLS_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.G_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.AMG_GT_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.EQB_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.E_Coupe_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.AMG_C_Class.resources
-C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.C_Coupe_Class.resources
