@@ -22,13 +22,13 @@ namespace CuoiKy_Winform
         public C_Class()
         {
             InitializeComponent();
-            //C200.Image = Image.FromFile(pathC200);
-            //C300.Image = Image.FromFile(pathC300);
-            //C43.Image = Image.FromFile(pathC43);
+            C200.Image = Image.FromFile(pathC200);
+            C300.Image = Image.FromFile(pathC300);
+            C43.Image = Image.FromFile(pathC43);
 
-            C200.Image = Image.FromFile(pathC200_hau);
-            C300.Image = Image.FromFile(pathC300_hau);
-            C43.Image = Image.FromFile(pathC43_hau);
+            //C200.Image = Image.FromFile(pathC200_hau);
+            //C300.Image = Image.FromFile(pathC300_hau);
+            //C43.Image = Image.FromFile(pathC43_hau);
         }
 
         private void lbCClass_Click(object sender, EventArgs e)

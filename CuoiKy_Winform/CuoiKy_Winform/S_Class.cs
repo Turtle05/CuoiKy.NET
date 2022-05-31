@@ -27,17 +27,17 @@ namespace CuoiKy_Winform
         public S_Class()
         {
             InitializeComponent();
-            //S450.Image = Image.FromFile(pathS450);
-            //S500.Image = Image.FromFile(pathS500);
-            //S600.Image = Image.FromFile(pathS600);
-            //S680.Image = Image.FromFile(pathS680);
-            //S65.Image = Image.FromFile(pathS65);
+            S450.Image = Image.FromFile(pathS450);
+            S500.Image = Image.FromFile(pathS500);
+            S600.Image = Image.FromFile(pathS600);
+            S680.Image = Image.FromFile(pathS680);
+            S65.Image = Image.FromFile(pathS65);
 
-            S450.Image = Image.FromFile(pathS450_hau);
-            S500.Image = Image.FromFile(pathS500_hau);
-            S600.Image = Image.FromFile(pathS600_hau);
-            S680.Image = Image.FromFile(pathS680_hau);
-            S65.Image = Image.FromFile(pathS65_hau);
+            //S450.Image = Image.FromFile(pathS450_hau);
+            //S500.Image = Image.FromFile(pathS500_hau);
+            //S600.Image = Image.FromFile(pathS600_hau);
+            //S680.Image = Image.FromFile(pathS680_hau);
+            //S65.Image = Image.FromFile(pathS65_hau);
         }
 
         private void S450_Click(object sender, EventArgs e)

@@ -21,12 +21,12 @@ namespace CuoiKy_Winform
         public G_Class()
         {
             InitializeComponent();
-           // G400.Image = Image.FromFile(pathG400);
-           // G63.Image = Image.FromFile(pathG63);
+            G400.Image = Image.FromFile(pathG400);
+            G63.Image = Image.FromFile(pathG63);
 
 
-            G400.Image = Image.FromFile(pathG400_hau);
-            G63.Image = Image.FromFile(pathG63_hau);
+            //G400.Image = Image.FromFile(pathG400_hau);
+            //G63.Image = Image.FromFile(pathG63_hau);
 
         }
 

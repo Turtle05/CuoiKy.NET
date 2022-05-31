@@ -21,12 +21,12 @@ namespace CuoiKy_Winform
         public AMG_GT_Class()
         {
             InitializeComponent();
-          //  AMG_GT2.Image = Image.FromFile(pathAMG_GT2);
-          //  AMG_GT4.Image = Image.FromFile(pathAMG_GT4);
+            AMG_GT2.Image = Image.FromFile(pathAMG_GT2);
+            AMG_GT4.Image = Image.FromFile(pathAMG_GT4);
 
 
-            AMG_GT2.Image = Image.FromFile(pathAMG_GT2_hau);
-            AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
+            //AMG_GT2.Image = Image.FromFile(pathAMG_GT2_hau);
+            //AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
         }
     }
 }

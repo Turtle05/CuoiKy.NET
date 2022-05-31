@@ -32,11 +32,13 @@ namespace CuoiKy_Winform
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             new Form_SignIn().Show();
+            this.Hide();
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             new Form_SignUp().Show();
+            this.Hide();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

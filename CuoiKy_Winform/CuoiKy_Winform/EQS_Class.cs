@@ -18,9 +18,9 @@ namespace CuoiKy_Winform
         public EQS_Class()
         {
             InitializeComponent();
-            // EQS.Image = Image.FromFile(pathEQS);
+            EQS.Image = Image.FromFile(pathEQS);
 
-            EQS.Image = Image.FromFile(pathEQS_hau);
+            //EQS.Image = Image.FromFile(pathEQS_hau);
         }
 
         private void lbEQSClass_Click(object sender, EventArgs e)

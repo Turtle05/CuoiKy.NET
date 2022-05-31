@@ -22,13 +22,13 @@ namespace CuoiKy_Winform
         public GLE_Class()
         {
             InitializeComponent();
-           // GLE300.Image = Image.FromFile(pathGLE300);
-            //GLE400.Image = Image.FromFile(pathGLE400);
-            //GLE500.Image = Image.FromFile(pathGLE500);
+            GLE300.Image = Image.FromFile(pathGLE300);
+            GLE400.Image = Image.FromFile(pathGLE400);
+            GLE500.Image = Image.FromFile(pathGLE500);
 
-            GLE300.Image = Image.FromFile(pathGLE300_hau);
-            GLE400.Image = Image.FromFile(pathGLE400_hau);
-            GLE500.Image = Image.FromFile(pathGLE500_hau);
+            //GLE300.Image = Image.FromFile(pathGLE300_hau);
+            //GLE400.Image = Image.FromFile(pathGLE400_hau);
+            //GLE500.Image = Image.FromFile(pathGLE500_hau);
         }
     }
 }
