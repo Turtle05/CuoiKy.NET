@@ -12,21 +12,21 @@ namespace CuoiKy_Winform
 {
     public partial class E_Coupe_Class : Form
     {
-        string pathE300_COUPE = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E300 Coupe.jpg";
-        string pathE400_COUPE = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E400_Coupe.jpg";
+        string pathE300_Coupe = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E300 Coupe.jpg";
+        string pathE400_Coupe = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E400 Coupe.jpg";
 
 
-        string pathE300_COUPE_hau = "C:\\Users\\Hau\\Documents\\GitHub\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E300 Coupe.jpg";
-        string pathE400_COUPE_hau = "C:\\Users\\Hau\\Documents\\GitHub\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E400 Coupe.jpg";
+        string pathE300_Coupe_hau = "C:\\Users\\Hau\\Documents\\GitHub\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E300 Coupe.jpg";
+        string pathE400_Coupe_hau = "C:\\Users\\Hau\\Documents\\GitHub\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E400 Coupe.jpg";
         public E_Coupe_Class()
         {
             InitializeComponent();
-            //E300_COUPE.Image = Image.FromFile(pathE300_COUPE);
-            //E400_COUPE.Image = Image.FromFile(pathE400_COUPE);
+            E300_Coupe.Image = Image.FromFile(pathE300_Coupe);
+            E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
 
 
-            E300_COUPE.Image = Image.FromFile(pathE300_COUPE_hau);
-            E400_COUPE.Image = Image.FromFile(pathE400_COUPE_hau);
+            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
+            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
         }
     }
 }

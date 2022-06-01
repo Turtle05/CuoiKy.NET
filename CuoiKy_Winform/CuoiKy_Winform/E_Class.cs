@@ -24,15 +24,15 @@ namespace CuoiKy_Winform
         public E_Class()
         {
             InitializeComponent();
-            // E200.Image = Image.FromFile(pathE200);
-            //E300.Image = Image.FromFile(pathE300);
-            // E350.Image = Image.FromFile(pathE350);
-            // E43.Image = Image.FromFile(pathE43);
+            E200.Image = Image.FromFile(pathE200);
+            E300.Image = Image.FromFile(pathE300);
+            E350.Image = Image.FromFile(pathE350);
+            E43.Image = Image.FromFile(pathE43);
 
-            E200.Image = Image.FromFile(pathE200_hau);
-            E300.Image = Image.FromFile(pathE300_hau);
-            E350.Image = Image.FromFile(pathE350_hau);
-            E43.Image = Image.FromFile(pathE43_hau);
+            //E200.Image = Image.FromFile(pathE200_hau);
+            //E300.Image = Image.FromFile(pathE300_hau);
+            //E350.Image = Image.FromFile(pathE350_hau);
+            //E43.Image = Image.FromFile(pathE43_hau);
         }
 
         private void lbEClass_Click(object sender, EventArgs e)

@@ -12,11 +12,11 @@ namespace CuoiKy_Winform
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main() 
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GLS_Class ());
+            Application.Run(new Home());
         }
     }
 }

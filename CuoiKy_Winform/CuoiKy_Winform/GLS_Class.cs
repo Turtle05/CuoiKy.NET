@@ -22,12 +22,12 @@ namespace CuoiKy_Winform
         public GLS_Class()
         {
             InitializeComponent();
-            //  GLS400.Image = Image.FromFile(pathGLS400);
-            //  GLS500.Image = Image.FromFile(pathGLS500);
+            GLS400.Image = Image.FromFile(pathGLS400);
+            GLS500.Image = Image.FromFile(pathGLS500);
 
 
-            GLS400.Image = Image.FromFile(pathGLS400_hau);
-            GLS500.Image = Image.FromFile(pathGLS500_hau);
+            //GLS400.Image = Image.FromFile(pathGLS400_hau);
+            //GLS500.Image = Image.FromFile(pathGLS500_hau);
 
         }
     }

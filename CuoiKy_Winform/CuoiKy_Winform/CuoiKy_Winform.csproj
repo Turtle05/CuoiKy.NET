@@ -52,17 +52,17 @@
     <Compile Include="All_CarClass.Designer.cs">
       <DependentUpon>All_CarClass.cs</DependentUpon>
     </Compile>
-    <Compile Include="AMG-C_Class.cs">
+    <Compile Include="AMG_C_Class.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AMG-C_Class.Designer.cs">
-      <DependentUpon>AMG-C_Class.cs</DependentUpon>
+    <Compile Include="AMG_C_Class.Designer.cs">
+      <DependentUpon>AMG_C_Class.cs</DependentUpon>
     </Compile>
-    <Compile Include="AMG-GT_Class.cs">
+    <Compile Include="AMG_GT_Class.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AMG-GT_Class.Designer.cs">
-      <DependentUpon>AMG-GT_Class.cs</DependentUpon>
+    <Compile Include="AMG_GT_Class.Designer.cs">
+      <DependentUpon>AMG_GT_Class.cs</DependentUpon>
     </Compile>
     <Compile Include="A_Class.cs">
       <SubType>Form</SubType>
@@ -194,11 +194,11 @@
     <EmbeddedResource Include="All_CarClass.resx">
       <DependentUpon>All_CarClass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AMG-C_Class.resx">
-      <DependentUpon>AMG-C_Class.cs</DependentUpon>
+    <EmbeddedResource Include="AMG_C_Class.resx">
+      <DependentUpon>AMG_C_Class.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AMG-GT_Class.resx">
-      <DependentUpon>AMG-GT_Class.cs</DependentUpon>
+    <EmbeddedResource Include="AMG_GT_Class.resx">
+      <DependentUpon>AMG_GT_Class.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="A_Class.resx">
       <DependentUpon>A_Class.cs</DependentUpon>
@@ -320,7 +320,6 @@
     <None Include="Resources\AMG-C43 Coupe.jpg" />
     <None Include="Resources\AMG-C63 Coupe.jpg" />
     <None Include="Resources\C200 Coupe.jpg" />
-    <None Include="Resources\E400 Coupe1.jpg" />
     <None Include="Resources\C300 Coupe.jpg" />
     <None Include="Resources\EQB.jpg" />
     <None Include="Resources\GLE300.jpg" />

@@ -43,9 +43,9 @@
             // 
             this.lbAMG_GTClass.Font = new System.Drawing.Font("MV Boli", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbAMG_GTClass.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbAMG_GTClass.Location = new System.Drawing.Point(-5, -5);
+            this.lbAMG_GTClass.Location = new System.Drawing.Point(12, 0);
             this.lbAMG_GTClass.Name = "lbAMG_GTClass";
-            this.lbAMG_GTClass.Size = new System.Drawing.Size(163, 37);
+            this.lbAMG_GTClass.Size = new System.Drawing.Size(183, 46);
             this.lbAMG_GTClass.TabIndex = 4;
             this.lbAMG_GTClass.Text = "AMG GT Class";
             // 
@@ -56,37 +56,37 @@
             this.pnlAMG_GTClass.Controls.Add(this.rtxtAMG_GT2);
             this.pnlAMG_GTClass.Controls.Add(this.AMG_GT4);
             this.pnlAMG_GTClass.Controls.Add(this.AMG_GT2);
-            this.pnlAMG_GTClass.Location = new System.Drawing.Point(6, 32);
+            this.pnlAMG_GTClass.Location = new System.Drawing.Point(1, 48);
             this.pnlAMG_GTClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAMG_GTClass.Name = "pnlAMG_GTClass";
-            this.pnlAMG_GTClass.Size = new System.Drawing.Size(952, 392);
+            this.pnlAMG_GTClass.Size = new System.Drawing.Size(1054, 536);
             this.pnlAMG_GTClass.TabIndex = 5;
             // 
             // rtxtAMG_GT4
             // 
-            this.rtxtAMG_GT4.Location = new System.Drawing.Point(361, 275);
+            this.rtxtAMG_GT4.Location = new System.Drawing.Point(406, 319);
             this.rtxtAMG_GT4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtxtAMG_GT4.Name = "rtxtAMG_GT4";
-            this.rtxtAMG_GT4.Size = new System.Drawing.Size(540, 161);
+            this.rtxtAMG_GT4.Size = new System.Drawing.Size(607, 200);
             this.rtxtAMG_GT4.TabIndex = 1;
             this.rtxtAMG_GT4.Text = "";
             // 
             // rtxtAMG_GT2
             // 
-            this.rtxtAMG_GT2.Location = new System.Drawing.Point(361, 58);
+            this.rtxtAMG_GT2.Location = new System.Drawing.Point(406, 23);
             this.rtxtAMG_GT2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtxtAMG_GT2.Name = "rtxtAMG_GT2";
-            this.rtxtAMG_GT2.Size = new System.Drawing.Size(540, 161);
+            this.rtxtAMG_GT2.Size = new System.Drawing.Size(607, 200);
             this.rtxtAMG_GT2.TabIndex = 1;
             this.rtxtAMG_GT2.Text = "";
             // 
             // AMG_GT4
             // 
             this.AMG_GT4.Image = global::CuoiKy_Winform.Properties.Resources.AMG_GT_4_door;
-            this.AMG_GT4.Location = new System.Drawing.Point(40, 275);
+            this.AMG_GT4.Location = new System.Drawing.Point(45, 319);
             this.AMG_GT4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AMG_GT4.Name = "AMG_GT4";
-            this.AMG_GT4.Size = new System.Drawing.Size(258, 160);
+            this.AMG_GT4.Size = new System.Drawing.Size(290, 200);
             this.AMG_GT4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AMG_GT4.TabIndex = 0;
             this.AMG_GT4.TabStop = false;
@@ -94,22 +94,23 @@
             // AMG_GT2
             // 
             this.AMG_GT2.Image = global::CuoiKy_Winform.Properties.Resources.AMG_GT_2_door1;
-            this.AMG_GT2.Location = new System.Drawing.Point(40, 58);
+            this.AMG_GT2.Location = new System.Drawing.Point(45, 23);
             this.AMG_GT2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AMG_GT2.Name = "AMG_GT2";
-            this.AMG_GT2.Size = new System.Drawing.Size(258, 160);
+            this.AMG_GT2.Size = new System.Drawing.Size(290, 200);
             this.AMG_GT2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AMG_GT2.TabIndex = 0;
             this.AMG_GT2.TabStop = false;
             // 
             // AMG_GT_Class
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(964, 456);
+            this.ClientSize = new System.Drawing.Size(1076, 595);
             this.Controls.Add(this.pnlAMG_GTClass);
             this.Controls.Add(this.lbAMG_GTClass);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AMG_GT_Class";
             this.Text = "AMG_GT_Class";
             this.pnlAMG_GTClass.ResumeLayout(false);

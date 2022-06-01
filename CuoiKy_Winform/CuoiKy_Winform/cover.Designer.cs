@@ -105,7 +105,7 @@ namespace CuoiKy_Winform
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // cover
+            // Cover
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,7 +116,8 @@ namespace CuoiKy_Winform
             this.Controls.Add(this.lbWelcome);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "cover";
+            this.Name = "Cover";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mercedes Car";
             this.Load += new System.EventHandler(this.cover_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
