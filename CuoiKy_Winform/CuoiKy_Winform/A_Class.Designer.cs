@@ -31,13 +31,13 @@ namespace CuoiKy_Winform
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A_Class));
             this.pnlAClass = new System.Windows.Forms.Panel();
-            this.rtxtA45 = new System.Windows.Forms.RichTextBox();
-            this.rtxtA220 = new System.Windows.Forms.RichTextBox();
-            this.rtxtA200 = new System.Windows.Forms.RichTextBox();
             this.A45 = new System.Windows.Forms.PictureBox();
             this.A220 = new System.Windows.Forms.PictureBox();
             this.A200 = new System.Windows.Forms.PictureBox();
             this.lbAClass = new System.Windows.Forms.Label();
+            this.lbA200 = new System.Windows.Forms.Label();
+            this.lbA220 = new System.Windows.Forms.Label();
+            this.lbA45 = new System.Windows.Forms.Label();
             this.pnlAClass.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.A45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.A220)).BeginInit();
@@ -47,46 +47,17 @@ namespace CuoiKy_Winform
             // pnlAClass
             // 
             this.pnlAClass.AutoScroll = true;
-            this.pnlAClass.Controls.Add(this.rtxtA45);
-            this.pnlAClass.Controls.Add(this.rtxtA220);
-            this.pnlAClass.Controls.Add(this.rtxtA200);
+            this.pnlAClass.Controls.Add(this.lbA45);
+            this.pnlAClass.Controls.Add(this.lbA220);
+            this.pnlAClass.Controls.Add(this.lbA200);
             this.pnlAClass.Controls.Add(this.A45);
             this.pnlAClass.Controls.Add(this.A220);
             this.pnlAClass.Controls.Add(this.A200);
             this.pnlAClass.Location = new System.Drawing.Point(6, 58);
             this.pnlAClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAClass.Name = "pnlAClass";
-            this.pnlAClass.Size = new System.Drawing.Size(1065, 490);
-            this.pnlAClass.TabIndex = 1;
-            // 
-            // rtxtA45
-            // 
-            this.rtxtA45.Location = new System.Drawing.Point(406, 586);
-            this.rtxtA45.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rtxtA45.Name = "rtxtA45";
-            this.rtxtA45.Size = new System.Drawing.Size(607, 196);
-            this.rtxtA45.TabIndex = 1;
-            this.rtxtA45.Text = "";
-            // 
-            // rtxtA220
-            // 
-            this.rtxtA220.Location = new System.Drawing.Point(406, 301);
-            this.rtxtA220.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rtxtA220.Name = "rtxtA220";
-            this.rtxtA220.Size = new System.Drawing.Size(607, 200);
-            this.rtxtA220.TabIndex = 1;
-            this.rtxtA220.Text = "";
-            this.rtxtA220.TextChanged += new System.EventHandler(this.rtxtA220_TextChanged);
-            // 
-            // rtxtA200
-            // 
-            this.rtxtA200.Location = new System.Drawing.Point(406, 24);
-            this.rtxtA200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rtxtA200.Name = "rtxtA200";
-            this.rtxtA200.Size = new System.Drawing.Size(607, 200);
-            this.rtxtA200.TabIndex = 1;
-            this.rtxtA200.Text = "";
-            this.rtxtA200.TextChanged += new System.EventHandler(this.rtxtA200_TextChanged);
+            this.pnlAClass.Size = new System.Drawing.Size(1129, 490);
+            this.pnlAClass.TabIndex = 2;
             // 
             // A45
             // 
@@ -132,12 +103,36 @@ namespace CuoiKy_Winform
             this.lbAClass.TabIndex = 0;
             this.lbAClass.Text = "A Class";
             // 
+            // lbA200
+            // 
+            this.lbA200.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbA200.Location = new System.Drawing.Point(402, 24);
+            this.lbA200.Name = "lbA200";
+            this.lbA200.Size = new System.Drawing.Size(662, 200);
+            this.lbA200.TabIndex = 1;
+            // 
+            // lbA220
+            // 
+            this.lbA220.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbA220.Location = new System.Drawing.Point(402, 301);
+            this.lbA220.Name = "lbA220";
+            this.lbA220.Size = new System.Drawing.Size(662, 200);
+            this.lbA220.TabIndex = 2;
+            // 
+            // lbA45
+            // 
+            this.lbA45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbA45.Location = new System.Drawing.Point(402, 586);
+            this.lbA45.Name = "lbA45";
+            this.lbA45.Size = new System.Drawing.Size(662, 200);
+            this.lbA45.TabIndex = 2;
+            // 
             // A_Class
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1084, 570);
+            this.ClientSize = new System.Drawing.Size(1153, 575);
             this.Controls.Add(this.pnlAClass);
             this.Controls.Add(this.lbAClass);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -158,11 +153,11 @@ namespace CuoiKy_Winform
         #endregion
         private System.Windows.Forms.Panel pnlAClass;
         private System.Windows.Forms.PictureBox A200;
-        private System.Windows.Forms.RichTextBox rtxtA45;
-        private System.Windows.Forms.RichTextBox rtxtA220;
-        private System.Windows.Forms.RichTextBox rtxtA200;
         private System.Windows.Forms.PictureBox A45;
         private System.Windows.Forms.PictureBox A220;
         private System.Windows.Forms.Label lbAClass;
+        private System.Windows.Forms.Label lbA200;
+        private System.Windows.Forms.Label lbA45;
+        private System.Windows.Forms.Label lbA220;
     }
 }
