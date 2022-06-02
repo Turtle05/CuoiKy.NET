@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(C_Class));
             this.lbCClass = new System.Windows.Forms.Label();
             this.pnlCClass = new System.Windows.Forms.Panel();
-            this.rtxtC43 = new System.Windows.Forms.RichTextBox();
-            this.rtxtC300 = new System.Windows.Forms.RichTextBox();
-            this.rtxtC200 = new System.Windows.Forms.RichTextBox();
             this.C43 = new System.Windows.Forms.PictureBox();
             this.C300 = new System.Windows.Forms.PictureBox();
             this.C200 = new System.Windows.Forms.PictureBox();
+            this.lbC200 = new System.Windows.Forms.Label();
+            this.lbC300 = new System.Windows.Forms.Label();
+            this.lbC43 = new System.Windows.Forms.Label();
             this.pnlCClass.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.C43)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.C300)).BeginInit();
@@ -57,44 +57,17 @@
             // pnlCClass
             // 
             this.pnlCClass.AutoScroll = true;
-            this.pnlCClass.Controls.Add(this.rtxtC43);
-            this.pnlCClass.Controls.Add(this.rtxtC300);
-            this.pnlCClass.Controls.Add(this.rtxtC200);
+            this.pnlCClass.Controls.Add(this.lbC43);
+            this.pnlCClass.Controls.Add(this.lbC300);
+            this.pnlCClass.Controls.Add(this.lbC200);
             this.pnlCClass.Controls.Add(this.C43);
             this.pnlCClass.Controls.Add(this.C300);
             this.pnlCClass.Controls.Add(this.C200);
             this.pnlCClass.Location = new System.Drawing.Point(2, 57);
             this.pnlCClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlCClass.Name = "pnlCClass";
-            this.pnlCClass.Size = new System.Drawing.Size(1068, 490);
+            this.pnlCClass.Size = new System.Drawing.Size(1141, 490);
             this.pnlCClass.TabIndex = 2;
-            // 
-            // rtxtC43
-            // 
-            this.rtxtC43.Location = new System.Drawing.Point(400, 561);
-            this.rtxtC43.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rtxtC43.Name = "rtxtC43";
-            this.rtxtC43.Size = new System.Drawing.Size(607, 200);
-            this.rtxtC43.TabIndex = 1;
-            this.rtxtC43.Text = "";
-            // 
-            // rtxtC300
-            // 
-            this.rtxtC300.Location = new System.Drawing.Point(400, 290);
-            this.rtxtC300.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rtxtC300.Name = "rtxtC300";
-            this.rtxtC300.Size = new System.Drawing.Size(607, 200);
-            this.rtxtC300.TabIndex = 1;
-            this.rtxtC300.Text = "";
-            // 
-            // rtxtC200
-            // 
-            this.rtxtC200.Location = new System.Drawing.Point(400, 23);
-            this.rtxtC200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.rtxtC200.Name = "rtxtC200";
-            this.rtxtC200.Size = new System.Drawing.Size(607, 200);
-            this.rtxtC200.TabIndex = 1;
-            this.rtxtC200.Text = "";
             // 
             // C43
             // 
@@ -129,12 +102,36 @@
             this.C200.TabIndex = 0;
             this.C200.TabStop = false;
             // 
+            // lbC200
+            // 
+            this.lbC200.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbC200.Location = new System.Drawing.Point(396, 23);
+            this.lbC200.Name = "lbC200";
+            this.lbC200.Size = new System.Drawing.Size(675, 200);
+            this.lbC200.TabIndex = 2;
+            // 
+            // lbC300
+            // 
+            this.lbC300.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbC300.Location = new System.Drawing.Point(396, 290);
+            this.lbC300.Name = "lbC300";
+            this.lbC300.Size = new System.Drawing.Size(675, 200);
+            this.lbC300.TabIndex = 2;
+            // 
+            // lbC43
+            // 
+            this.lbC43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbC43.Location = new System.Drawing.Point(396, 561);
+            this.lbC43.Name = "lbC43";
+            this.lbC43.Size = new System.Drawing.Size(696, 200);
+            this.lbC43.TabIndex = 2;
+            // 
             // C_Class
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1070, 574);
+            this.ClientSize = new System.Drawing.Size(1155, 574);
             this.Controls.Add(this.pnlCClass);
             this.Controls.Add(this.lbCClass);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -154,11 +151,11 @@
 
         private System.Windows.Forms.Label lbCClass;
         private System.Windows.Forms.Panel pnlCClass;
-        private System.Windows.Forms.RichTextBox rtxtC43;
-        private System.Windows.Forms.RichTextBox rtxtC300;
-        private System.Windows.Forms.RichTextBox rtxtC200;
         private System.Windows.Forms.PictureBox C43;
         private System.Windows.Forms.PictureBox C300;
         private System.Windows.Forms.PictureBox C200;
+        private System.Windows.Forms.Label lbC43;
+        private System.Windows.Forms.Label lbC300;
+        private System.Windows.Forms.Label lbC200;
     }
 }

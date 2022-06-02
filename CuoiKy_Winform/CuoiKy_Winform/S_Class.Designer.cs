@@ -83,16 +83,16 @@
             this.rxtx65.Location = new System.Drawing.Point(426, 1143);
             this.rxtx65.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rxtx65.Name = "rxtx65";
-            this.rxtx65.Size = new System.Drawing.Size(607, 200);
+            this.rxtx65.Size = new System.Drawing.Size(607, 198);
             this.rxtx65.TabIndex = 1;
             this.rxtx65.Text = "";
             // 
             // rtxtS680
             // 
-            this.rtxtS680.Location = new System.Drawing.Point(426, 868);
+            this.rtxtS680.Location = new System.Drawing.Point(426, 864);
             this.rtxtS680.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtxtS680.Name = "rtxtS680";
-            this.rtxtS680.Size = new System.Drawing.Size(607, 196);
+            this.rtxtS680.Size = new System.Drawing.Size(607, 200);
             this.rtxtS680.TabIndex = 1;
             this.rtxtS680.Text = "";
             this.rtxtS680.TextChanged += new System.EventHandler(this.rtxtS680_TextChanged);
@@ -117,7 +117,7 @@
             // 
             // rtxtS450
             // 
-            this.rtxtS450.Location = new System.Drawing.Point(426, 29);
+            this.rtxtS450.Location = new System.Drawing.Point(417, 29);
             this.rtxtS450.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtxtS450.Name = "rtxtS450";
             this.rtxtS450.Size = new System.Drawing.Size(607, 200);

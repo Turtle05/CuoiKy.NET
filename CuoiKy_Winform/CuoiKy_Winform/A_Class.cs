@@ -61,24 +61,39 @@ namespace CuoiKy_Winform
 
             SqlCommand command = new SqlCommand();
             command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "Check_Email";
+            command.CommandText = "Car_Details";
             command.Connection = conn;
 
-            SqlParameter parEmail = new SqlParameter("@email", SqlDbType.VarChar);
-            parEmail.Value = txtEmail.Text;
-            command.Parameters.Add(parEmail);
+            // List PictureBox & Label
+            List<PictureBox> lstpcb = new List<PictureBox>();
+            List<Label> lstlb = new List<Label>();
+            lstpcb.Add(A200); lstpcb.Add(A220); lstpcb.Add(A45);
+            lstlb.Add(lbA200); lstlb.Add(lbA220); lstlb.Add(lbA45);
 
-            SqlDataReader reader = command.ExecuteReader();
-            if (reader.Read())
+            for (int i = 0; i < lstpcb.Count(); i++)
             {
+                SqlParameter parCar_name = new SqlParameter("@car_name", SqlDbType.VarChar);
+                parCar_name.Value = lstpcb[i].Name;
+                command.Parameters.Add(parCar_name);
 
+                SqlDataReader reader = command.ExecuteReader();
+                if (reader.Read())
+                {
+                    string car_name = "Name: Mercedes-benz " + reader.GetString(0);
+                    string car_type = "Type: " + reader.GetString(1);
+                    string car_class = "Class: " + reader.GetString(2);
+                    int car_seat = reader.GetInt32(3);
+                    string energy_type = "Energy type: " + reader.GetString(4);
+                    string car_color = "Color: " + reader.GetString(5);
+                    string car_info = "Information: " + reader.GetString(6);
+                    lstlb[i].Text = car_name + "\n" + car_type + "      " + car_class + "      " + energy_type + "\n" + "Seat: " + car_seat.ToString() + "      "
+                         + car_color + "\n" + car_info + "\n";
+                }
+                reader.Close();
+                command.Parameters.Clear();
             }
-            else
-            {
-
-            }
-            reader.Close();
         }
+
         private void A_Class_FormClosing(object sender, FormClosingEventArgs e)
         {
             new Home().Show();
