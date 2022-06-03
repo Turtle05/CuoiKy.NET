@@ -23,16 +23,17 @@ namespace CuoiKy_Winform
 
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
+        string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
         public C_Class()
         {
             InitializeComponent();
-            C200.Image = Image.FromFile(pathC200);
-            C300.Image = Image.FromFile(pathC300);
-            C43.Image = Image.FromFile(pathC43);
+            //C200.Image = Image.FromFile(pathC200);
+            //C300.Image = Image.FromFile(pathC300);
+            //C43.Image = Image.FromFile(pathC43);
 
-            //C200.Image = Image.FromFile(pathC200_hau);
-            //C300.Image = Image.FromFile(pathC300_hau);
-            //C43.Image = Image.FromFile(pathC43_hau);
+            C200.Image = Image.FromFile(pathC200_hau);
+            C300.Image = Image.FromFile(pathC300_hau);
+            C43.Image = Image.FromFile(pathC43_hau);
         }
 
         private void lbCClass_Click(object sender, EventArgs e)
@@ -42,8 +43,18 @@ namespace CuoiKy_Winform
 
         private void C_Class_Load(object sender, EventArgs e)
         {
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
+
             if (conn == null)
-                conn = new SqlConnection(strConn);
+                conn = new SqlConnection(strConn2);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
