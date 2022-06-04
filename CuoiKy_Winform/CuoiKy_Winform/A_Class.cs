@@ -24,16 +24,17 @@ namespace CuoiKy_Winform
 
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
+        string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
         public A_Class()
         {
             InitializeComponent();
-            A200.Image = Image.FromFile(pathA200);
-            A220.Image = Image.FromFile(pathA220);
-            A45.Image = Image.FromFile(pathA45);
+            //A200.Image = Image.FromFile(pathA200);
+            //A220.Image = Image.FromFile(pathA220);
+            //A45.Image = Image.FromFile(pathA45);
 
-            //A200.Image = Image.FromFile(pathA200_hau);
-            //A220.Image = Image.FromFile(pathA220_hau);
-            //A45.Image = Image.FromFile(pathA45_hau);
+            A200.Image = Image.FromFile(pathA200_hau);
+            A220.Image = Image.FromFile(pathA220_hau);
+            A45.Image = Image.FromFile(pathA45_hau);
         }
 
         private void A200_Click(object sender, EventArgs e)
@@ -54,8 +55,18 @@ namespace CuoiKy_Winform
 
         private void A_Class_Load(object sender, EventArgs e)
         {
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
+
             if (conn == null)
-                conn = new SqlConnection(strConn);
+                conn = new SqlConnection(strConn2);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -63,6 +74,7 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
