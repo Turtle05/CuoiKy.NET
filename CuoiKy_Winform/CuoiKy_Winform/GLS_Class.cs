@@ -13,6 +13,7 @@ namespace CuoiKy_Winform
 {
     public partial class GLS_Class : Form
     {
+        string parent_name;
         string pathGLS400 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\GLS400.jpeg";
         string pathGLS500 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\GLS500.jpg";
 
@@ -27,29 +28,30 @@ namespace CuoiKy_Winform
         public GLS_Class()
         {
             InitializeComponent();
-            //GLS400.Image = Image.FromFile(pathGLS400);
-            //GLS500.Image = Image.FromFile(pathGLS500);
+            GLS400.Image = Image.FromFile(pathGLS400);
+            GLS500.Image = Image.FromFile(pathGLS500);
 
 
-            GLS400.Image = Image.FromFile(pathGLS400_hau);
-            GLS500.Image = Image.FromFile(pathGLS500_hau);
+            //GLS400.Image = Image.FromFile(pathGLS400_hau);
+            //GLS500.Image = Image.FromFile(pathGLS500_hau);
+        }
+        public GLS_Class(string parent_formname)
+        {
+            InitializeComponent();
+            GLS400.Image = Image.FromFile(pathGLS400);
+            GLS500.Image = Image.FromFile(pathGLS500);
 
+
+            //GLS400.Image = Image.FromFile(pathGLS400_hau);
+            //GLS500.Image = Image.FromFile(pathGLS500_hau);
+
+            parent_name = parent_formname;
         }
 
         private void GLS_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -57,6 +59,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -86,6 +98,14 @@ namespace CuoiKy_Winform
                 reader.Close();
                 command.Parameters.Clear();
             }
+        }
+
+        private void GLS_Class_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (parent_name == "Home")
+                new Home().Show();
+            else
+                new SUV().Show();
         }
     }
 }

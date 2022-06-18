@@ -13,6 +13,7 @@ namespace CuoiKy_Winform
 {
     public partial class EQS_Class : Form
     {
+        string parent_name;
         string pathEQS = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\EQS.jpg";
 
         string pathEQS_hau = "C:\\Users\\Hau\\Documents\\GitHub\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\EQS.jpg";
@@ -21,12 +22,13 @@ namespace CuoiKy_Winform
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
 
-        public EQS_Class()
+        public EQS_Class(string parent_formname)
         {
             InitializeComponent();
-           // EQS.Image = Image.FromFile(pathEQS);
+            EQS.Image = Image.FromFile(pathEQS);
 
-            EQS.Image = Image.FromFile(pathEQS_hau);
+            //EQS.Image = Image.FromFile(pathEQS_hau);
+            parent_name = parent_formname;
         }
 
         private void lbEQSClass_Click(object sender, EventArgs e)
@@ -36,18 +38,8 @@ namespace CuoiKy_Winform
 
         private void EQS_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -55,6 +47,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -84,6 +86,14 @@ namespace CuoiKy_Winform
                 reader.Close();
                 command.Parameters.Clear();
             }
+        }
+
+        private void EQS_Class_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (parent_name == "Home")
+                new Home().Show();
+            else
+                new Sedan().Show();
         }
     }
     

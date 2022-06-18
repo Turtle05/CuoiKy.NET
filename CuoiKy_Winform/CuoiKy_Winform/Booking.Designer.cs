@@ -30,36 +30,52 @@ namespace CuoiKy_Winform
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
-            this.pcbCar1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCar1)).BeginInit();
+            this.fpnlBooking = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnPayment = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // pcbCar1
+            // fpnlBooking
             // 
-            this.pcbCar1.Location = new System.Drawing.Point(32, 36);
-            this.pcbCar1.Name = "pcbCar1";
-            this.pcbCar1.Size = new System.Drawing.Size(190, 143);
-            this.pcbCar1.TabIndex = 0;
-            this.pcbCar1.TabStop = false;
-            this.pcbCar1.Click += new System.EventHandler(this.pcbCar1_Click);
+            this.fpnlBooking.AutoScroll = true;
+            this.fpnlBooking.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.fpnlBooking.Location = new System.Drawing.Point(27, 12);
+            this.fpnlBooking.Name = "fpnlBooking";
+            this.fpnlBooking.Size = new System.Drawing.Size(1074, 482);
+            this.fpnlBooking.TabIndex = 0;
+            this.fpnlBooking.WrapContents = false;
+            // 
+            // btnPayment
+            // 
+            this.btnPayment.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnPayment.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPayment.Location = new System.Drawing.Point(859, 506);
+            this.btnPayment.Name = "btnPayment";
+            this.btnPayment.Size = new System.Drawing.Size(242, 48);
+            this.btnPayment.TabIndex = 1;
+            this.btnPayment.Text = "Payment";
+            this.btnPayment.UseVisualStyleBackColor = false;
+            this.btnPayment.Click += new System.EventHandler(this.btnPayment_Click);
             // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pcbCar1);
+            this.ClientSize = new System.Drawing.Size(1128, 566);
+            this.Controls.Add(this.btnPayment);
+            this.Controls.Add(this.fpnlBooking);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Booking";
             this.Text = "Booking";
-            ((System.ComponentModel.ISupportInitialize)(this.pcbCar1)).EndInit();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Booking_Form_Closing);
+            this.Load += new System.EventHandler(this.Booking_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pcbCar1;
+        private System.Windows.Forms.FlowLayoutPanel fpnlBooking;
+        private System.Windows.Forms.Button btnPayment;
     }
 }

@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace CuoiKy_Winform
 {
     partial class A_Class
@@ -31,13 +33,14 @@ namespace CuoiKy_Winform
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(A_Class));
             this.pnlAClass = new System.Windows.Forms.Panel();
+            this.lbA45 = new System.Windows.Forms.Label();
+            this.lbA220 = new System.Windows.Forms.Label();
+            this.lbA200 = new System.Windows.Forms.Label();
             this.A45 = new System.Windows.Forms.PictureBox();
             this.A220 = new System.Windows.Forms.PictureBox();
             this.A200 = new System.Windows.Forms.PictureBox();
             this.lbAClass = new System.Windows.Forms.Label();
-            this.lbA200 = new System.Windows.Forms.Label();
-            this.lbA220 = new System.Windows.Forms.Label();
-            this.lbA45 = new System.Windows.Forms.Label();
+            this.btnBooking = new System.Windows.Forms.Button();
             this.pnlAClass.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.A45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.A220)).BeginInit();
@@ -59,6 +62,30 @@ namespace CuoiKy_Winform
             this.pnlAClass.Size = new System.Drawing.Size(1129, 490);
             this.pnlAClass.TabIndex = 2;
             // 
+            // lbA45
+            // 
+            this.lbA45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbA45.Location = new System.Drawing.Point(402, 586);
+            this.lbA45.Name = "lbA45";
+            this.lbA45.Size = new System.Drawing.Size(662, 200);
+            this.lbA45.TabIndex = 2;
+            // 
+            // lbA220
+            // 
+            this.lbA220.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbA220.Location = new System.Drawing.Point(402, 301);
+            this.lbA220.Name = "lbA220";
+            this.lbA220.Size = new System.Drawing.Size(662, 200);
+            this.lbA220.TabIndex = 2;
+            // 
+            // lbA200
+            // 
+            this.lbA200.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbA200.Location = new System.Drawing.Point(402, 24);
+            this.lbA200.Name = "lbA200";
+            this.lbA200.Size = new System.Drawing.Size(662, 200);
+            this.lbA200.TabIndex = 1;
+            // 
             // A45
             // 
             this.A45.Image = global::CuoiKy_Winform.Properties.Resources.A45;
@@ -69,6 +96,7 @@ namespace CuoiKy_Winform
             this.A45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A45.TabIndex = 0;
             this.A45.TabStop = false;
+            this.A45.Click += new System.EventHandler(this.A45_Click);
             // 
             // A220
             // 
@@ -80,6 +108,7 @@ namespace CuoiKy_Winform
             this.A220.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.A220.TabIndex = 0;
             this.A220.TabStop = false;
+            this.A220.Click += new System.EventHandler(this.A220_Click);
             // 
             // A200
             // 
@@ -103,29 +132,15 @@ namespace CuoiKy_Winform
             this.lbAClass.TabIndex = 0;
             this.lbAClass.Text = "A Class";
             // 
-            // lbA200
+            // btnBooking
             // 
-            this.lbA200.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbA200.Location = new System.Drawing.Point(402, 24);
-            this.lbA200.Name = "lbA200";
-            this.lbA200.Size = new System.Drawing.Size(662, 200);
-            this.lbA200.TabIndex = 1;
-            // 
-            // lbA220
-            // 
-            this.lbA220.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbA220.Location = new System.Drawing.Point(402, 301);
-            this.lbA220.Name = "lbA220";
-            this.lbA220.Size = new System.Drawing.Size(662, 200);
-            this.lbA220.TabIndex = 2;
-            // 
-            // lbA45
-            // 
-            this.lbA45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbA45.Location = new System.Drawing.Point(402, 586);
-            this.lbA45.Name = "lbA45";
-            this.lbA45.Size = new System.Drawing.Size(662, 200);
-            this.lbA45.TabIndex = 2;
+            this.btnBooking.Location = new System.Drawing.Point(902, 8);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Size = new System.Drawing.Size(209, 38);
+            this.btnBooking.TabIndex = 3;
+            this.btnBooking.Text = "Booking";
+            this.btnBooking.UseVisualStyleBackColor = true;
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // A_Class
             // 
@@ -133,6 +148,7 @@ namespace CuoiKy_Winform
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1153, 575);
+            this.Controls.Add(this.btnBooking);
             this.Controls.Add(this.pnlAClass);
             this.Controls.Add(this.lbAClass);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -159,5 +175,6 @@ namespace CuoiKy_Winform
         private System.Windows.Forms.Label lbA200;
         private System.Windows.Forms.Label lbA45;
         private System.Windows.Forms.Label lbA220;
+        private System.Windows.Forms.Button btnBooking;
     }
 }
