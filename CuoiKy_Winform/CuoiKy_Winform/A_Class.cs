@@ -13,7 +13,7 @@ namespace CuoiKy_Winform
 {
     public partial class A_Class : Form
     {
-        static string frmStatus = "Active";
+        string parent_name;
         string pathA200 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\A200.jpg";
         string pathA220 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\A220.jpg";
         string pathA45 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\A45.jpg";
@@ -25,22 +25,79 @@ namespace CuoiKy_Winform
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
+
+        List<string> carName = new List<string>();
+        List<string> carPath = new List<string>();
+        Home frmHome;
+        Sedan frmSedan;
+        All_CarClass frmAll;
+
+        Booking bk;
+
         public A_Class()
         {
             InitializeComponent();
-            //A200.Image = Image.FromFile(pathA200);
-            //A220.Image = Image.FromFile(pathA220);
-            //A45.Image = Image.FromFile(pathA45);
+            A200.Image = Image.FromFile(pathA200);
+            A220.Image = Image.FromFile(pathA220);
+            A45.Image = Image.FromFile(pathA45);
 
-            A200.Image = Image.FromFile(pathA200_hau);
-            A220.Image = Image.FromFile(pathA220_hau);
-            A45.Image = Image.FromFile(pathA45_hau);
+            //A200.Image = Image.FromFile(pathA200_hau);
+            //A220.Image = Image.FromFile(pathA220_hau);
+            //A45.Image = Image.FromFile(pathA45_hau);
         }
 
-        private void A200_Click(object sender, EventArgs e)
+        public A_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
-            frmStatus = "Hidden";
-            new Booking().Show();
+            InitializeComponent();
+            A200.Image = Image.FromFile(pathA200);
+            A220.Image = Image.FromFile(pathA220);
+            A45.Image = Image.FromFile(pathA45);
+
+            //A200.Image = Image.FromFile(pathA200_hau);
+            //A220.Image = Image.FromFile(pathA220_hau);
+            //A45.Image = Image.FromFile(pathA45_hau);
+
+            parent_name = parent_form_name;
+
+            frmHome = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public A_Class(Sedan parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            A200.Image = Image.FromFile(pathA200);
+            A220.Image = Image.FromFile(pathA220);
+            A45.Image = Image.FromFile(pathA45);
+
+            //A200.Image = Image.FromFile(pathA200_hau);
+            //A220.Image = Image.FromFile(pathA220_hau);
+            //A45.Image = Image.FromFile(pathA45_hau);
+
+            parent_name = parent_form_name;
+
+            frmSedan = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public A_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            A200.Image = Image.FromFile(pathA200);
+            A220.Image = Image.FromFile(pathA220);
+            A45.Image = Image.FromFile(pathA45);
+
+            //A200.Image = Image.FromFile(pathA200_hau);
+            //A220.Image = Image.FromFile(pathA220_hau);
+            //A45.Image = Image.FromFile(pathA45_hau);
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
+            carName = carname;
+            carPath = carpath;
         }
 
         private void rtxtA220_TextChanged(object sender, EventArgs e)
@@ -55,18 +112,8 @@ namespace CuoiKy_Winform
 
         private void A_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -74,6 +121,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
 
             // List PictureBox & Label
@@ -108,7 +165,46 @@ namespace CuoiKy_Winform
 
         private void A_Class_FormClosing(object sender, FormClosingEventArgs e)
         {
-            new Home().Show();
+            if (parent_name == "Home")
+                frmHome.Show();
+            else if (parent_name == "Sedan")
+                frmSedan.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
+        }
+
+        private void A200_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("A200") == false)
+            {
+                carPath.Add(pathA200);
+                carName.Add("A200");
+
+                //frmHome.carPath.Add(pathA200);
+                //frmHome.carName.Add("A200");
+            }
+        }
+
+        private void A220_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("A220") == false)
+            {
+                carPath.Add(pathA220);
+                carName.Add("A220");
+            }
+        }
+
+        private void A45_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("A45") == false)
+            {
+                carPath.Add(pathA45);
+                carName.Add("A45");
+            }
+        }
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            new Booking(carName, carPath).Show();
         }
     }
 }

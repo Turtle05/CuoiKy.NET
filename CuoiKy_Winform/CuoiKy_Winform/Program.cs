@@ -16,7 +16,7 @@ namespace CuoiKy_Winform
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new E_Coupe_Class());
+            Application.Run(new Home());
         }
     }
 }

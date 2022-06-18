@@ -12,9 +12,19 @@ namespace CuoiKy_Winform
 {
     public partial class All_CarClass : Form
     {
+        List<string> carName = new List<string>();
+        List<string> carPath = new List<string>();
+
         public All_CarClass()
         {
             InitializeComponent();
+        }
+
+        public All_CarClass(List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            carName = carname;
+            carPath = carpath;
         }
 
         private void btnExit_Click(object sender, EventArgs e)

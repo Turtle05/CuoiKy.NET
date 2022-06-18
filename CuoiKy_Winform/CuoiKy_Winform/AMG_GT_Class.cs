@@ -13,6 +13,7 @@ namespace CuoiKy_Winform
 {
     public partial class AMG_GT_Class : Form
     {
+        string parent_name;
         string pathAMG_GT2 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\AMG-GT 2 door.jpg";
         string pathAMG_GT4 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\AMG-GT 4 door.jpeg";
 
@@ -23,31 +24,35 @@ namespace CuoiKy_Winform
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
+
         public AMG_GT_Class()
         {
             InitializeComponent();
-            //AMG_GT2.Image = Image.FromFile(pathAMG-GT2);
-            //AMG_GT4.Image = Image.FromFile(pathAMG-GT4);
+            AMG_GT2.Image = Image.FromFile(pathAMG_GT2);
+            AMG_GT4.Image = Image.FromFile(pathAMG_GT4);
 
 
-            AMG_GT2.Image = Image.FromFile(pathAMG_GT2_hau);
-            AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
+            //AMG_GT2.Image = Image.FromFile(pathAMG_GT2_hau);
+            //AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
+        }
+
+        public AMG_GT_Class(string parent_formname)
+        {
+            InitializeComponent();
+            AMG_GT2.Image = Image.FromFile(pathAMG_GT2);
+            AMG_GT4.Image = Image.FromFile(pathAMG_GT4);
+
+
+            //AMG_GT2.Image = Image.FromFile(pathAMG_GT2_hau);
+            //AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
+
+            parent_name = parent_formname;
         }
 
         private void AMG_GT_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -55,6 +60,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -84,6 +99,14 @@ namespace CuoiKy_Winform
                 reader.Close();
                 command.Parameters.Clear();
             }
+        }
+
+        private void AMG_GT_Class_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (parent_name == "Home")
+                new Home().Show();
+            else
+                new Coupe().Show();
         }
     }
 }
