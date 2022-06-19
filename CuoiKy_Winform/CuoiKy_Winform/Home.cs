@@ -67,32 +67,32 @@ namespace CuoiKy_Winform
 
         private void lbEClass_Click(object sender, EventArgs e)
         {
-            new E_Class(Get_FormName()).Show();
+            new E_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
 
         }
 
         private void lbGLCClass_Click(object sender, EventArgs e)
         {
-            new GLC_Class(Get_FormName()).Show();
+            new GLC_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbGLEClass_Click(object sender, EventArgs e)
         {
-            new GLE_Class(Get_FormName()).Show();
+            new GLE_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbGLSClass_Click(object sender, EventArgs e)
         {
-            new GLS_Class(Get_FormName()).Show();
+            new GLS_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbAMGGT_Click(object sender, EventArgs e)
         {
-            new AMG_GT_Class(Get_FormName()).Show();
+            new AMG_GT_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
@@ -104,7 +104,7 @@ namespace CuoiKy_Winform
 
         private void lbECoupe_Click(object sender, EventArgs e)
         {
-            new E_Coupe_Class(Get_FormName()).Show();
+            new E_Coupe_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 

@@ -25,34 +25,86 @@ namespace CuoiKy_Winform
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
-        public GLC_Class(string parent_formname)
+
+        List<string> carName = new List<string>();
+        List<string> carPath = new List<string>();
+        Home frmHome;
+        SUV frmSUV;
+        All_CarClass frmAll;
+
+        Booking bk;
+        public GLC_Class()
         {
             InitializeComponent();
-            GLC300.Image = Image.FromFile(pathGLC300);
-            GLC350.Image = Image.FromFile(pathGLC350);
-            GLC400.Image = Image.FromFile(pathGLC400);
+            //GLC300.Image = Image.FromFile(pathGLC300);
+            //GLC350.Image = Image.FromFile(pathGLC350);
+            //GLC400.Image = Image.FromFile(pathGLC400);
 
-            //GLC300.Image = Image.FromFile(pathGLC300_hau);
-            //GLC350.Image = Image.FromFile(pathGLC350_hau);
-            //GLC400.Image = Image.FromFile(pathGLC400_hau);
+            GLC300.Image = Image.FromFile(pathGLC300_hau);
+            GLC350.Image = Image.FromFile(pathGLC350_hau);
+            GLC400.Image = Image.FromFile(pathGLC400_hau);
 
-            parent_name = parent_formname;
+       
+        }
+
+        public GLC_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            //GLC300.Image = Image.FromFile(pathGLC300);
+            //GLC350.Image = Image.FromFile(pathGLC350);
+            //GLC400.Image = Image.FromFile(pathGLC400);
+
+            GLC300.Image = Image.FromFile(pathGLC300_hau);
+            GLC350.Image = Image.FromFile(pathGLC350_hau);
+            GLC400.Image = Image.FromFile(pathGLC400_hau);
+
+            parent_name = parent_form_name;
+
+            frmHome = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public GLC_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            //GLC300.Image = Image.FromFile(pathGLC300);
+            //GLC350.Image = Image.FromFile(pathGLC350);
+            //GLC400.Image = Image.FromFile(pathGLC400);
+
+            GLC300.Image = Image.FromFile(pathGLC300_hau);
+            GLC350.Image = Image.FromFile(pathGLC350_hau);
+            GLC400.Image = Image.FromFile(pathGLC400_hau);
+
+            parent_name = parent_form_name;
+
+            frmSUV = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public GLC_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            //GLC300.Image = Image.FromFile(pathGLC300);
+            //GLC350.Image = Image.FromFile(pathGLC350);
+            //GLC400.Image = Image.FromFile(pathGLC400);
+
+            GLC300.Image = Image.FromFile(pathGLC300_hau);
+            GLC350.Image = Image.FromFile(pathGLC350_hau);
+            GLC400.Image = Image.FromFile(pathGLC400_hau);
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
+            carName = carname;
+            carPath = carpath;
         }
 
         private void GLC_Class_Load(object sender, EventArgs e)
         {
-            if (conn == null)
-                conn = new SqlConnection(strConn);
-            if (conn.State == ConnectionState.Closed)
-                conn.Open();
-
-            SqlCommand command = new SqlCommand();
-            command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "Car_Details";
-            command.Connection = conn;
-
             //if (conn == null)
-            //    conn = new SqlConnection(strConn2);
+            //    conn = new SqlConnection(strConn);
             //if (conn.State == ConnectionState.Closed)
             //    conn.Open();
 
@@ -60,6 +112,16 @@ namespace CuoiKy_Winform
             //command.CommandType = CommandType.StoredProcedure;
             //command.CommandText = "Car_Details";
             //command.Connection = conn;
+
+            if (conn == null)
+                conn = new SqlConnection(strConn2);
+            if (conn.State == ConnectionState.Closed)
+                conn.Open();
+
+            SqlCommand command = new SqlCommand();
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "Car_Details";
+            command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -94,9 +156,49 @@ namespace CuoiKy_Winform
         private void GLC_Class_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (parent_name == "Home")
-                new Home().Show();
-            else
-                new SUV().Show();
+                frmHome.Show();
+            else if (parent_name == "SUV")
+                frmSUV.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
+        }
+
+        private void GLC300_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("GLC300") == false)
+            {
+                //carPath.Add(pathGLC300);
+                carName.Add("GLC300");
+
+                carPath.Add(pathGLC300_hau);
+            }
+        }
+
+        private void GLC350_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("GLC350") == false)
+            {
+                //carPath.Add(pathGLC350);
+                carName.Add("GLC350");
+
+                carPath.Add(pathGLC350_hau);
+            }
+        }
+
+        private void GLC400_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("GLC400") == false)
+            {
+                //carPath.Add(pathGLC400);
+                carName.Add("GLC400");
+
+                carPath.Add(pathGLC400_hau);
+            }
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            new Booking(carName, carPath).Show();
         }
     }
     

@@ -44,25 +44,25 @@ namespace CuoiKy_Winform
 
         private void lbAMGGT_Click(object sender, EventArgs e)
         {
-            new AMG_GT_Class(Get_FormName()).Show();
+            new AMG_GT_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbAMGC_Click(object sender, EventArgs e)
         {
-            //new AMG_C_Class(Get_FormName(), carName, carPath).Show();
-            //this.Hide();
+            new AMG_C_Class(this, Get_FormName(), carName, carPath).Show();
+            this.Hide();
         }
 
         private void lbECoupe_Click(object sender, EventArgs e)
         {
-            new E_Coupe_Class(Get_FormName()).Show();
+            new E_Coupe_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbCCoupe_Click(object sender, EventArgs e)
         {
-            new C_Coupe_Class(Get_FormName()).Show();
+            new C_Coupe_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
     }

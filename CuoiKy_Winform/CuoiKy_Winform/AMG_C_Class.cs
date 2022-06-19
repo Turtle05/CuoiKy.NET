@@ -28,28 +28,29 @@ namespace CuoiKy_Winform
         List<string> carName = new List<string>();
         List<string> carPath = new List<string>();
         Home frmHome;
-        Booking bk;
+        Coupe frmCoupe;
+        All_CarClass frmAll;
 
+        Booking bk;
         public AMG_C_Class()
         {
             InitializeComponent();
-            AMG_C43.Image = Image.FromFile(pathAMG_C43);
-            AMG_C63.Image = Image.FromFile(pathAMG_C63);
+            //AMG_C43.Image = Image.FromFile(pathAMG_C43);
+            //AMG_C63.Image = Image.FromFile(pathAMG_C63);
 
 
-            //AMG_C43.Image = Image.FromFile(pathAMG_C43_hau);
-            //AMG_C63.Image = Image.FromFile(pathAMG_C63_hau);
+            AMG_C43.Image = Image.FromFile(pathAMG_C43_hau);
+            AMG_C63.Image = Image.FromFile(pathAMG_C63_hau);
         }
         public AMG_C_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            AMG_C43.Image = Image.FromFile(pathAMG_C43);
-            AMG_C63.Image = Image.FromFile(pathAMG_C63);
+            //AMG_C43.Image = Image.FromFile(pathAMG_C43);
+            //AMG_C63.Image = Image.FromFile(pathAMG_C63);
 
 
-            //AMG_C43.Image = Image.FromFile(pathAMG_C43_hau);
-            //AMG_C63.Image = Image.FromFile(pathAMG_C63_hau);
-
+            AMG_C43.Image = Image.FromFile(pathAMG_C43_hau);
+            AMG_C63.Image = Image.FromFile(pathAMG_C63_hau);
             parent_name = parent_form_name;
 
             frmHome = parent;
@@ -57,20 +58,44 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
+        public AMG_C_Class(Coupe parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            //AMG_C43.Image = Image.FromFile(pathAMG_C43);
+            //AMG_C63.Image = Image.FromFile(pathAMG_C63);
+
+
+            AMG_C43.Image = Image.FromFile(pathAMG_C43_hau);
+            AMG_C63.Image = Image.FromFile(pathAMG_C63_hau);
+
+            parent_name = parent_form_name;
+
+            frmCoupe = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public AMG_C_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            //AMG_C43.Image = Image.FromFile(pathAMG_C43);
+            //AMG_C63.Image = Image.FromFile(pathAMG_C63);
+
+
+            AMG_C43.Image = Image.FromFile(pathAMG_C43_hau);
+            AMG_C63.Image = Image.FromFile(pathAMG_C63_hau);
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
         private void AMG_C_Class_Load(object sender, EventArgs e)
         {
-            if (conn == null)
-                conn = new SqlConnection(strConn);
-            if (conn.State == ConnectionState.Closed)
-                conn.Open();
-
-            SqlCommand command = new SqlCommand();
-            command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "Car_Details";
-            command.Connection = conn;
-
             //if (conn == null)
-            //    conn = new SqlConnection(strConn2);
+            //    conn = new SqlConnection(strConn);
             //if (conn.State == ConnectionState.Closed)
             //    conn.Open();
 
@@ -78,6 +103,16 @@ namespace CuoiKy_Winform
             //command.CommandType = CommandType.StoredProcedure;
             //command.CommandText = "Car_Details";
             //command.Connection = conn;
+
+            if (conn == null)
+                conn = new SqlConnection(strConn2);
+            if (conn.State == ConnectionState.Closed)
+                conn.Open();
+
+            SqlCommand command = new SqlCommand();
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "Car_Details";
+            command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -112,19 +147,20 @@ namespace CuoiKy_Winform
         {
             if (parent_name == "Home")
                 frmHome.Show();
-            else
-                new Coupe().Show();
+            else if (parent_name == "Coupe")
+                frmCoupe.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
         }
 
         private void AMG_C43_Click(object sender, EventArgs e)
         {
             if (carName.Contains("AMG_C43") == false)
             {
-                carPath.Add(pathAMG_C43);
+                //carPath.Add(pathAMG_C43);
                 carName.Add("AMG_C43");
 
-                //frmHome.carPath.Add(pathAMG_C43);
-                //frmHome.carName.Add("AMG_C43");
+                carPath.Add(pathAMG_C43_hau);
             }
         }
 
@@ -132,16 +168,16 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("AMG_C63") == false)
             {
-                carPath.Add(pathAMG_C63);
+                //carPath.Add(pathAMG_C63);
                 carName.Add("AMG_C63");
+
+                carPath.Add(pathAMG_C63_hau);
             }
         }
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            bk = new Booking(carName, carPath);
-            bk.Show();
-            //new Booking(carName, carPath).Show();
+            new Booking(carName, carPath).Show();
         }
     }
 }

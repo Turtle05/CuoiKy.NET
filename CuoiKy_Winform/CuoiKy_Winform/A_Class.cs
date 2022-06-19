@@ -37,25 +37,25 @@ namespace CuoiKy_Winform
         public A_Class()
         {
             InitializeComponent();
-            A200.Image = Image.FromFile(pathA200);
-            A220.Image = Image.FromFile(pathA220);
-            A45.Image = Image.FromFile(pathA45);
+            //A200.Image = Image.FromFile(pathA200);
+            //A220.Image = Image.FromFile(pathA220);
+            //A45.Image = Image.FromFile(pathA45);
 
-            //A200.Image = Image.FromFile(pathA200_hau);
-            //A220.Image = Image.FromFile(pathA220_hau);
-            //A45.Image = Image.FromFile(pathA45_hau);
+            A200.Image = Image.FromFile(pathA200_hau);
+            A220.Image = Image.FromFile(pathA220_hau);
+            A45.Image = Image.FromFile(pathA45_hau);
         }
 
         public A_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            A200.Image = Image.FromFile(pathA200);
-            A220.Image = Image.FromFile(pathA220);
-            A45.Image = Image.FromFile(pathA45);
+            //A200.Image = Image.FromFile(pathA200);
+            //A220.Image = Image.FromFile(pathA220);
+            //A45.Image = Image.FromFile(pathA45);
 
-            //A200.Image = Image.FromFile(pathA200_hau);
-            //A220.Image = Image.FromFile(pathA220_hau);
-            //A45.Image = Image.FromFile(pathA45_hau);
+            A200.Image = Image.FromFile(pathA200_hau);
+            A220.Image = Image.FromFile(pathA220_hau);
+            A45.Image = Image.FromFile(pathA45_hau);
 
             parent_name = parent_form_name;
 
@@ -67,13 +67,13 @@ namespace CuoiKy_Winform
         public A_Class(Sedan parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            A200.Image = Image.FromFile(pathA200);
-            A220.Image = Image.FromFile(pathA220);
-            A45.Image = Image.FromFile(pathA45);
+            //A200.Image = Image.FromFile(pathA200);
+            //A220.Image = Image.FromFile(pathA220);
+            //A45.Image = Image.FromFile(pathA45);
 
-            //A200.Image = Image.FromFile(pathA200_hau);
-            //A220.Image = Image.FromFile(pathA220_hau);
-            //A45.Image = Image.FromFile(pathA45_hau);
+            A200.Image = Image.FromFile(pathA200_hau);
+            A220.Image = Image.FromFile(pathA220_hau);
+            A45.Image = Image.FromFile(pathA45_hau);
 
             parent_name = parent_form_name;
 
@@ -85,13 +85,13 @@ namespace CuoiKy_Winform
         public A_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            A200.Image = Image.FromFile(pathA200);
-            A220.Image = Image.FromFile(pathA220);
-            A45.Image = Image.FromFile(pathA45);
+            //A200.Image = Image.FromFile(pathA200);
+            //A220.Image = Image.FromFile(pathA220);
+            //A45.Image = Image.FromFile(pathA45);
 
-            //A200.Image = Image.FromFile(pathA200_hau);
-            //A220.Image = Image.FromFile(pathA220_hau);
-            //A45.Image = Image.FromFile(pathA45_hau);
+            A200.Image = Image.FromFile(pathA200_hau);
+            A220.Image = Image.FromFile(pathA220_hau);
+            A45.Image = Image.FromFile(pathA45_hau);
 
             parent_name = parent_form_name;
 
@@ -112,18 +112,8 @@ namespace CuoiKy_Winform
 
         private void A_Class_Load(object sender, EventArgs e)
         {
-            if (conn == null)
-                conn = new SqlConnection(strConn);
-            if (conn.State == ConnectionState.Closed)
-                conn.Open();
-
-            SqlCommand command = new SqlCommand();
-            command.CommandType = CommandType.StoredProcedure;
-            command.CommandText = "Car_Details";
-            command.Connection = conn;
-
             //if (conn == null)
-            //    conn = new SqlConnection(strConn2);
+            //    conn = new SqlConnection(strConn);
             //if (conn.State == ConnectionState.Closed)
             //    conn.Open();
 
@@ -131,6 +121,16 @@ namespace CuoiKy_Winform
             //command.CommandType = CommandType.StoredProcedure;
             //command.CommandText = "Car_Details";
             //command.Connection = conn;
+
+            if (conn == null)
+                conn = new SqlConnection(strConn2);
+            if (conn.State == ConnectionState.Closed)
+                conn.Open();
+
+            SqlCommand command = new SqlCommand();
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "Car_Details";
+            command.Connection = conn;
 
 
             // List PictureBox & Label
@@ -177,11 +177,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("A200") == false)
             {
-                carPath.Add(pathA200);
+                //carPath.Add(pathA200);
                 carName.Add("A200");
 
-                //frmHome.carPath.Add(pathA200);
-                //frmHome.carName.Add("A200");
+                carPath.Add(pathA200_hau);
             }
         }
 
@@ -189,8 +188,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("A220") == false)
             {
-                carPath.Add(pathA220);
+                //carPath.Add(pathA220);
                 carName.Add("A220");
+
+                carPath.Add(pathA220_hau);
             }
         }
 
@@ -198,8 +199,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("A45") == false)
             {
-                carPath.Add(pathA45);
+                //carPath.Add(pathA45);
                 carName.Add("A45");
+
+                carPath.Add(pathA45_hau);
             }
         }
         private void btnBooking_Click(object sender, EventArgs e)
