@@ -33,18 +33,18 @@ namespace CuoiKy_Winform
         public EQS_Class()
         {
             InitializeComponent();
-            //EQS.Image = Image.FromFile(pathEQS);
+            EQS.Image = Image.FromFile(pathEQS);
 
-            EQS.Image = Image.FromFile(pathEQS_hau);
+            //EQS.Image = Image.FromFile(pathEQS_hau);
             
         }
 
         public EQS_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //EQS.Image = Image.FromFile(pathEQS);
+            EQS.Image = Image.FromFile(pathEQS);
 
-            EQS.Image = Image.FromFile(pathEQS_hau);
+            //EQS.Image = Image.FromFile(pathEQS_hau);
             parent_name = parent_form_name;
 
             frmHome = parent;
@@ -55,9 +55,9 @@ namespace CuoiKy_Winform
         public EQS_Class(Sedan parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //EQS.Image = Image.FromFile(pathEQS);
+            EQS.Image = Image.FromFile(pathEQS);
 
-            EQS.Image = Image.FromFile(pathEQS_hau);
+            //EQS.Image = Image.FromFile(pathEQS_hau);
 
             parent_name = parent_form_name;
 
@@ -69,9 +69,9 @@ namespace CuoiKy_Winform
         public EQS_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //EQS.Image = Image.FromFile(pathEQS);
+            EQS.Image = Image.FromFile(pathEQS);
 
-            EQS.Image = Image.FromFile(pathEQS_hau);
+            //EQS.Image = Image.FromFile(pathEQS_hau);
 
             parent_name = parent_form_name;
 
@@ -87,18 +87,8 @@ namespace CuoiKy_Winform
 
         private void EQS_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -106,6 +96,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -151,10 +151,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("EQS") == false)
             {
-                //carPath.Add(pathEQS);
+                carPath.Add(pathEQS);
                 carName.Add("EQS");
 
-                carPath.Add(pathEQS_hau);
+                //carPath.Add(pathEQS_hau);
             }
         }
         private void btnBooking_Click(object sender, EventArgs e)

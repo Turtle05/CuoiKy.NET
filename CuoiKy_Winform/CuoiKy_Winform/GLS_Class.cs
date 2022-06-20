@@ -45,12 +45,12 @@ namespace CuoiKy_Winform
         public GLS_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //GLS400.Image = Image.FromFile(pathGLS400);
-            //GLS500.Image = Image.FromFile(pathGLS500);
+            GLS400.Image = Image.FromFile(pathGLS400);
+            GLS500.Image = Image.FromFile(pathGLS500);
 
 
-            GLS400.Image = Image.FromFile(pathGLS400_hau);
-            GLS500.Image = Image.FromFile(pathGLS500_hau);
+            //GLS400.Image = Image.FromFile(pathGLS400_hau);
+            //GLS500.Image = Image.FromFile(pathGLS500_hau);
 
             parent_name = parent_form_name;
 
@@ -62,12 +62,12 @@ namespace CuoiKy_Winform
         public GLS_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //GLS400.Image = Image.FromFile(pathGLS400);
-            //GLS500.Image = Image.FromFile(pathGLS500);
+            GLS400.Image = Image.FromFile(pathGLS400);
+            GLS500.Image = Image.FromFile(pathGLS500);
 
 
-            GLS400.Image = Image.FromFile(pathGLS400_hau);
-            GLS500.Image = Image.FromFile(pathGLS500_hau);
+            //GLS400.Image = Image.FromFile(pathGLS400_hau);
+            //GLS500.Image = Image.FromFile(pathGLS500_hau);
 
             parent_name = parent_form_name;
 
@@ -79,12 +79,12 @@ namespace CuoiKy_Winform
         public GLS_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //GLS400.Image = Image.FromFile(pathGLS400);
-            //GLS500.Image = Image.FromFile(pathGLS500);
+            GLS400.Image = Image.FromFile(pathGLS400);
+            GLS500.Image = Image.FromFile(pathGLS500);
 
 
-            GLS400.Image = Image.FromFile(pathGLS400_hau);
-            GLS500.Image = Image.FromFile(pathGLS500_hau);
+            //GLS400.Image = Image.FromFile(pathGLS400_hau);
+            //GLS500.Image = Image.FromFile(pathGLS500_hau);
 
             parent_name = parent_form_name;
 
@@ -95,18 +95,8 @@ namespace CuoiKy_Winform
 
         private void GLS_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -114,6 +104,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -159,10 +159,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("GLS400") == false)
             {
-                //carPath.Add(pathGLS400);
+                carPath.Add(pathGLS400);
                 carName.Add("GLS400");
 
-                carPath.Add(pathGLS400_hau);
+               // carPath.Add(pathGLS400_hau);
             }
         }
 
@@ -170,10 +170,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("GLS500") == false)
             {
-                //carPath.Add(pathGLS500);
+                carPath.Add(pathGLS500);
                 carName.Add("GLS500");
 
-                carPath.Add(pathGLS500_hau);
+                //carPath.Add(pathGLS500_hau);
             }
         }
 

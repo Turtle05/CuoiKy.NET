@@ -32,9 +32,9 @@ namespace CuoiKy_Winform
         public EQB_Class()
         {
             InitializeComponent();
-            //EQB.Image = Image.FromFile(pathEQB);
+            EQB.Image = Image.FromFile(pathEQB);
 
-            EQB.Image = Image.FromFile(pathEQB_hau);
+            //EQB.Image = Image.FromFile(pathEQB_hau);
 
 
         }
@@ -42,9 +42,9 @@ namespace CuoiKy_Winform
         public EQB_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //EQB.Image = Image.FromFile(pathEQB);
+            EQB.Image = Image.FromFile(pathEQB);
 
-            EQB.Image = Image.FromFile(pathEQB_hau);
+            //EQB.Image = Image.FromFile(pathEQB_hau);
 
             parent_name = parent_form_name;
 
@@ -56,9 +56,9 @@ namespace CuoiKy_Winform
         public EQB_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //EQB.Image = Image.FromFile(pathEQB);
+            EQB.Image = Image.FromFile(pathEQB);
 
-            EQB.Image = Image.FromFile(pathEQB_hau);
+            //EQB.Image = Image.FromFile(pathEQB_hau);
             parent_name = parent_form_name;
 
             frmSUV = parent;
@@ -73,18 +73,8 @@ namespace CuoiKy_Winform
 
         private void EQB_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -92,6 +82,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -137,10 +137,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("EQB") == false)
             {
-                //carPath.Add(pathEQB);
+                carPath.Add(pathEQB);
                 carName.Add("EQB");
 
-                carPath.Add(pathEQB_hau);
+                //carPath.Add(pathEQB_hau);
             }
         }
 

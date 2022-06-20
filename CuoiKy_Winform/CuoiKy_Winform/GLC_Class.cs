@@ -36,13 +36,13 @@ namespace CuoiKy_Winform
         public GLC_Class()
         {
             InitializeComponent();
-            //GLC300.Image = Image.FromFile(pathGLC300);
-            //GLC350.Image = Image.FromFile(pathGLC350);
-            //GLC400.Image = Image.FromFile(pathGLC400);
+            GLC300.Image = Image.FromFile(pathGLC300);
+            GLC350.Image = Image.FromFile(pathGLC350);
+            GLC400.Image = Image.FromFile(pathGLC400);
 
-            GLC300.Image = Image.FromFile(pathGLC300_hau);
-            GLC350.Image = Image.FromFile(pathGLC350_hau);
-            GLC400.Image = Image.FromFile(pathGLC400_hau);
+            //GLC300.Image = Image.FromFile(pathGLC300_hau);
+            //GLC350.Image = Image.FromFile(pathGLC350_hau);
+            //GLC400.Image = Image.FromFile(pathGLC400_hau);
 
        
         }
@@ -50,13 +50,13 @@ namespace CuoiKy_Winform
         public GLC_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //GLC300.Image = Image.FromFile(pathGLC300);
-            //GLC350.Image = Image.FromFile(pathGLC350);
-            //GLC400.Image = Image.FromFile(pathGLC400);
+            GLC300.Image = Image.FromFile(pathGLC300);
+            GLC350.Image = Image.FromFile(pathGLC350);
+            GLC400.Image = Image.FromFile(pathGLC400);
 
-            GLC300.Image = Image.FromFile(pathGLC300_hau);
-            GLC350.Image = Image.FromFile(pathGLC350_hau);
-            GLC400.Image = Image.FromFile(pathGLC400_hau);
+            //GLC300.Image = Image.FromFile(pathGLC300_hau);
+            //GLC350.Image = Image.FromFile(pathGLC350_hau);
+            //GLC400.Image = Image.FromFile(pathGLC400_hau);
 
             parent_name = parent_form_name;
 
@@ -68,13 +68,13 @@ namespace CuoiKy_Winform
         public GLC_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //GLC300.Image = Image.FromFile(pathGLC300);
-            //GLC350.Image = Image.FromFile(pathGLC350);
-            //GLC400.Image = Image.FromFile(pathGLC400);
+            GLC300.Image = Image.FromFile(pathGLC300);
+            GLC350.Image = Image.FromFile(pathGLC350);
+            GLC400.Image = Image.FromFile(pathGLC400);
 
-            GLC300.Image = Image.FromFile(pathGLC300_hau);
-            GLC350.Image = Image.FromFile(pathGLC350_hau);
-            GLC400.Image = Image.FromFile(pathGLC400_hau);
+            //GLC300.Image = Image.FromFile(pathGLC300_hau);
+            //GLC350.Image = Image.FromFile(pathGLC350_hau);
+            //GLC400.Image = Image.FromFile(pathGLC400_hau);
 
             parent_name = parent_form_name;
 
@@ -86,14 +86,13 @@ namespace CuoiKy_Winform
         public GLC_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //GLC300.Image = Image.FromFile(pathGLC300);
-            //GLC350.Image = Image.FromFile(pathGLC350);
-            //GLC400.Image = Image.FromFile(pathGLC400);
+            GLC300.Image = Image.FromFile(pathGLC300);
+            GLC350.Image = Image.FromFile(pathGLC350);
+            GLC400.Image = Image.FromFile(pathGLC400);
 
-            GLC300.Image = Image.FromFile(pathGLC300_hau);
-            GLC350.Image = Image.FromFile(pathGLC350_hau);
-            GLC400.Image = Image.FromFile(pathGLC400_hau);
-
+            //GLC300.Image = Image.FromFile(pathGLC300_hau);
+            //GLC350.Image = Image.FromFile(pathGLC350_hau);
+            //GLC400.Image = Image.FromFile(pathGLC400_hau);
             parent_name = parent_form_name;
 
             frmAll = parent;
@@ -103,18 +102,8 @@ namespace CuoiKy_Winform
 
         private void GLC_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -122,6 +111,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -167,10 +166,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("GLC300") == false)
             {
-                //carPath.Add(pathGLC300);
+                carPath.Add(pathGLC300);
                 carName.Add("GLC300");
 
-                carPath.Add(pathGLC300_hau);
+                //carPath.Add(pathGLC300_hau);
             }
         }
 
@@ -178,10 +177,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("GLC350") == false)
             {
-                //carPath.Add(pathGLC350);
+                carPath.Add(pathGLC350);
                 carName.Add("GLC350");
 
-                carPath.Add(pathGLC350_hau);
+                //carPath.Add(pathGLC350_hau);
             }
         }
 
@@ -189,10 +188,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("GLC400") == false)
             {
-                //carPath.Add(pathGLC400);
+                carPath.Add(pathGLC400);
                 carName.Add("GLC400");
 
-                carPath.Add(pathGLC400_hau);
+                //carPath.Add(pathGLC400_hau);
             }
         }
 

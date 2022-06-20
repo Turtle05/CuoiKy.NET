@@ -35,12 +35,12 @@ namespace CuoiKy_Winform
         public E_Coupe_Class()
         {
             InitializeComponent();
-            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe);
-            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
+            E300_Coupe.Image = Image.FromFile(pathE300_Coupe);
+            E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
 
 
-            E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
-            E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
+            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
+            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
 
       
         }
@@ -48,12 +48,12 @@ namespace CuoiKy_Winform
         public E_Coupe_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe);
-            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
+            E300_Coupe.Image = Image.FromFile(pathE300_Coupe);
+            E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
 
 
-            E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
-            E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
+            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
+            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
             parent_name = parent_form_name;
 
             frmHome = parent;
@@ -64,12 +64,12 @@ namespace CuoiKy_Winform
         public E_Coupe_Class(Coupe parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe);
-            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
+            E300_Coupe.Image = Image.FromFile(pathE300_Coupe);
+            E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
 
 
-            E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
-            E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
+            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
+            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
 
             parent_name = parent_form_name;
 
@@ -81,12 +81,12 @@ namespace CuoiKy_Winform
         public E_Coupe_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
-            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe);
-            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
+            E300_Coupe.Image = Image.FromFile(pathE300_Coupe);
+            E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
 
 
-            E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
-            E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
+            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
+            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
 
             parent_name = parent_form_name;
 
@@ -96,18 +96,8 @@ namespace CuoiKy_Winform
         }
         private void E_Coupe_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -115,6 +105,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -160,10 +160,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("E300_Coupe") == false)
             {
-                //carPath.Add(pathE300_Coupe);
+                carPath.Add(pathE300_Coupe);
                 carName.Add("E300_Coupe");
 
-                carPath.Add(pathE300_Coupe_hau);
+               // carPath.Add(pathE300_Coupe_hau);
             }
         }
 
@@ -171,10 +171,10 @@ namespace CuoiKy_Winform
         {
             if (carName.Contains("E400_Coupe") == false)
             {
-                //carPath.Add(pathE400_Coupe);
+                carPath.Add(pathE400_Coupe);
                 carName.Add("E400_Coupe");
 
-                carPath.Add(pathE400_Coupe_hau);
+                //carPath.Add(pathE400_Coupe_hau);
             }
         }
 
