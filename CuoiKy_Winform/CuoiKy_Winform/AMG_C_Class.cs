@@ -28,8 +28,10 @@ namespace CuoiKy_Winform
         List<string> carName = new List<string>();
         List<string> carPath = new List<string>();
         Home frmHome;
-        Booking bk;
+        Coupe frmCoupe;
+        All_CarClass frmAll;
 
+        Booking bk;
         public AMG_C_Class()
         {
             InitializeComponent();
@@ -49,10 +51,43 @@ namespace CuoiKy_Winform
 
             //AMG_C43.Image = Image.FromFile(pathAMG_C43_hau);
             //AMG_C63.Image = Image.FromFile(pathAMG_C63_hau);
-
             parent_name = parent_form_name;
 
             frmHome = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public AMG_C_Class(Coupe parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            AMG_C43.Image = Image.FromFile(pathAMG_C43);
+            AMG_C63.Image = Image.FromFile(pathAMG_C63);
+
+
+            //AMG_C43.Image = Image.FromFile(pathAMG_C43_hau);
+            //AMG_C63.Image = Image.FromFile(pathAMG_C63_hau);
+
+            parent_name = parent_form_name;
+
+            frmCoupe = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public AMG_C_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            AMG_C43.Image = Image.FromFile(pathAMG_C43);
+            AMG_C63.Image = Image.FromFile(pathAMG_C63);
+
+
+            //AMG_C43.Image = Image.FromFile(pathAMG_C43_hau);
+            //AMG_C63.Image = Image.FromFile(pathAMG_C63_hau);
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
             carName = carname;
             carPath = carpath;
         }
@@ -112,8 +147,10 @@ namespace CuoiKy_Winform
         {
             if (parent_name == "Home")
                 frmHome.Show();
-            else
-                new Coupe().Show();
+            else if (parent_name == "Coupe")
+                frmCoupe.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
         }
 
         private void AMG_C43_Click(object sender, EventArgs e)
@@ -123,8 +160,7 @@ namespace CuoiKy_Winform
                 carPath.Add(pathAMG_C43);
                 carName.Add("AMG_C43");
 
-                //frmHome.carPath.Add(pathAMG_C43);
-                //frmHome.carName.Add("AMG_C43");
+                //carPath.Add(pathAMG_C43_hau);
             }
         }
 
@@ -134,14 +170,14 @@ namespace CuoiKy_Winform
             {
                 carPath.Add(pathAMG_C63);
                 carName.Add("AMG_C63");
+
+                //carPath.Add(pathAMG_C63_hau);
             }
         }
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            bk = new Booking(carName, carPath);
-            bk.Show();
-            //new Booking(carName, carPath).Show();
+            new Booking(carName, carPath).Show();
         }
     }
 }

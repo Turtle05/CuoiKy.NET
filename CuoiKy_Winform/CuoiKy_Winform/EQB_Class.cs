@@ -21,14 +21,49 @@ namespace CuoiKy_Winform
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
-        public EQB_Class(string parent_formname)
+
+        List<string> carName = new List<string>();
+        List<string> carPath = new List<string>();
+        Home frmHome;
+        SUV frmSUV;
+        All_CarClass frmAll;
+
+        Booking bk;
+        public EQB_Class()
         {
             InitializeComponent();
             EQB.Image = Image.FromFile(pathEQB);
 
             //EQB.Image = Image.FromFile(pathEQB_hau);
 
-            parent_name = parent_formname;
+
+        }
+
+        public EQB_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            EQB.Image = Image.FromFile(pathEQB);
+
+            //EQB.Image = Image.FromFile(pathEQB_hau);
+
+            parent_name = parent_form_name;
+
+            frmHome = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public EQB_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            EQB.Image = Image.FromFile(pathEQB);
+
+            //EQB.Image = Image.FromFile(pathEQB_hau);
+            parent_name = parent_form_name;
+
+            frmSUV = parent;
+            carName = carname;
+            carPath = carpath;
         }
 
         private void lbEQBClass_Click(object sender, EventArgs e)
@@ -91,9 +126,27 @@ namespace CuoiKy_Winform
         private void EQB_Class_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (parent_name == "Home")
-                new Home().Show();
-            else
-                new SUV().Show();
+                frmHome.Show();
+            else if (parent_name == "SUV")
+                frmSUV.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
+        }
+
+        private void EQB_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("EQB") == false)
+            {
+                carPath.Add(pathEQB);
+                carName.Add("EQB");
+
+                //carPath.Add(pathEQB_hau);
+            }
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            new Booking(carName, carPath).Show();
         }
     }
 }

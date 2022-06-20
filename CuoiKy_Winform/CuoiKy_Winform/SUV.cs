@@ -44,31 +44,31 @@ namespace CuoiKy_Winform
 
         private void lbGLCClass_Click(object sender, EventArgs e)
         {
-            new GLC_Class(Get_FormName()).Show();
+            new GLC_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbGLEClass_Click(object sender, EventArgs e)
         {
-            new GLE_Class(Get_FormName()).Show();
+            new GLE_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbGLSClass_Click(object sender, EventArgs e)
         {
-            new GLS_Class(Get_FormName()).Show();
+            new GLS_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbGClass_Click(object sender, EventArgs e)
         {
-            new G_Class(Get_FormName()).Show();
+            new G_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbEQBClass_Click(object sender, EventArgs e)
         {
-            new EQB_Class(Get_FormName()).Show();
+            new EQB_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
     }

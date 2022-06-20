@@ -305,27 +305,29 @@ namespace CuoiKy_Winform
 
         private string GetCarInfo(string car_name)
         {
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.Text;
+            //command.CommandText = "select car_name, car_class_name, color, energy_type, car_seat " +
+            //    "from car inner join car_class on car_class = car_class_id " +
+            //    "where car_name = @car_name";
+            //command.Connection = conn;
+
             if (conn == null)
-                conn = new SqlConnection(strConn);
+                conn = new SqlConnection(strConn2);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
             SqlCommand command = new SqlCommand();
             command.CommandType = CommandType.Text;
             command.CommandText = "select car_name, car_class_name, color, energy_type, car_seat " +
-                "from car inner join car_class on car_class = car_class_id " +
-                "where car_name = @car_name";
+                    "from car inner join car_class on car_class = car_class_id " +
+                    "where car_name = @car_name";
             command.Connection = conn;
-
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn2);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.Text;
-            //command.CommandText = "select car_info from car where car_name = @car_name";
-            //command.Connection = conn;
 
             SqlParameter parCar_name = new SqlParameter("@car_name", SqlDbType.VarChar);
             parCar_name.Value = car_name;
@@ -351,8 +353,18 @@ namespace CuoiKy_Winform
 
         private double GetQuantity(string car_name)
         {
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.Text;
+            //command.CommandText = "select intitial_quantity from car where car_name = @car_name";
+            //command.Connection = conn;
+
             if (conn == null)
-                conn = new SqlConnection(strConn);
+                conn = new SqlConnection(strConn2);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -360,16 +372,6 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.Text;
             command.CommandText = "select intitial_quantity from car where car_name = @car_name";
             command.Connection = conn;
-
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn2);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.Text;
-            //command.CommandText = "select car_info from car where car_name = @car_name";
-            //command.Connection = conn;
 
             SqlParameter parCar_name = new SqlParameter("@car_name", SqlDbType.VarChar);
             parCar_name.Value = car_name;

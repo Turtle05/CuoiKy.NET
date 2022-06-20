@@ -34,17 +34,7 @@ namespace CuoiKy_Winform
 
         Booking bk;
 
-        public C_Class()
-        {
-            InitializeComponent();
-            C200.Image = Image.FromFile(pathC200);
-            C300.Image = Image.FromFile(pathC300);
-            C43.Image = Image.FromFile(pathC43);
-
-            //C200.Image = Image.FromFile(pathC200_hau);
-            //C300.Image = Image.FromFile(pathC300_hau);
-            //C43.Image = Image.FromFile(pathC43_hau);
-        }
+       
 
         public C_Class(string parent_formname)
         {
@@ -183,10 +173,12 @@ namespace CuoiKy_Winform
 
         private void C200_Click(object sender, EventArgs e)
         {
-            if (carName.Contains("C200") == false)
+            if (carName.Contains(" C200") == false)
             {
                 carPath.Add(pathC200);
                 carName.Add("C200");
+
+               // carPath.Add(pathC200_hau);
             }
         }
 
@@ -196,6 +188,8 @@ namespace CuoiKy_Winform
             {
                 carPath.Add(pathC300);
                 carName.Add("C300");
+
+                //carPath.Add(pathC300_hau);
             }
         }
 
@@ -205,6 +199,8 @@ namespace CuoiKy_Winform
             {
                 carPath.Add(pathC43);
                 carName.Add("C43");
+
+               // carPath.Add(pathC43_hau);
             }
         }
 

@@ -25,6 +25,14 @@ namespace CuoiKy_Winform
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
 
+        List<string> carName = new List<string>();
+        List<string> carPath = new List<string>();
+        Home frmHome;
+        Coupe frmCoupe;
+        All_CarClass frmAll;
+
+        Booking bk;
+
         public AMG_GT_Class()
         {
             InitializeComponent();
@@ -33,10 +41,26 @@ namespace CuoiKy_Winform
 
 
             //AMG_GT2.Image = Image.FromFile(pathAMG_GT2_hau);
-            //AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
+           //AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
         }
 
-        public AMG_GT_Class(string parent_formname)
+        public AMG_GT_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            AMG_GT2.Image = Image.FromFile(pathAMG_GT2);
+            AMG_GT4.Image = Image.FromFile(pathAMG_GT4);
+
+
+            //AMG_GT2.Image = Image.FromFile(pathAMG_GT2_hau);
+            //AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
+            parent_name = parent_form_name;
+
+            frmHome = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public AMG_GT_Class(Coupe parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             AMG_GT2.Image = Image.FromFile(pathAMG_GT2);
@@ -46,7 +70,29 @@ namespace CuoiKy_Winform
             //AMG_GT2.Image = Image.FromFile(pathAMG_GT2_hau);
             //AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
 
-            parent_name = parent_formname;
+            parent_name = parent_form_name;
+
+            frmCoupe = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public AMG_GT_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            AMG_GT2.Image = Image.FromFile(pathAMG_GT2);
+            AMG_GT4.Image = Image.FromFile(pathAMG_GT4);
+
+
+            //AMG_GT2.Image = Image.FromFile(pathAMG_GT2_hau);
+            //AMG_GT4.Image = Image.FromFile(pathAMG_GT4_hau);
+
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
+            carName = carname;
+            carPath = carpath;
         }
 
         private void AMG_GT_Class_Load(object sender, EventArgs e)
@@ -104,9 +150,38 @@ namespace CuoiKy_Winform
         private void AMG_GT_Class_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (parent_name == "Home")
-                new Home().Show();
-            else
-                new Coupe().Show();
+                frmHome.Show();
+            else if (parent_name == "Coupe")
+                frmCoupe.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
+        }
+
+        private void AMG_GT2_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("AMG_GT2") == false)
+            {
+                carPath.Add(pathAMG_GT2);
+                carName.Add("AMG_GT2");
+
+               // carPath.Add(pathAMG_GT2_hau);
+            }
+        }
+
+        private void AMG_GT4_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("AMG_GT4") == false)
+            {
+                carPath.Add(pathAMG_GT4);
+                carName.Add("AMG_GT4");
+
+                //carPath.Add(pathAMG_GT4_hau);
+            }
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            new Booking(carName, carPath).Show();
         }
     }
 }

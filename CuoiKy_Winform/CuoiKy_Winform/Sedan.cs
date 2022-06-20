@@ -56,19 +56,19 @@ namespace CuoiKy_Winform
 
         private void lbEClass_Click(object sender, EventArgs e)
         {
-            new E_Class(Get_FormName()).Show();
+            new E_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbSClass_Click(object sender, EventArgs e)
         {
-            new S_Class(Get_FormName()).Show();
+            new S_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
 
         private void lbEQSClass_Click(object sender, EventArgs e)
         {
-            new EQS_Class(Get_FormName()).Show();
+            new EQS_Class(this, Get_FormName(), carName, carPath).Show();
             this.Hide();
         }
     }

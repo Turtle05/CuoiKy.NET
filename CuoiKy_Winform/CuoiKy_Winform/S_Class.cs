@@ -30,6 +30,14 @@ namespace CuoiKy_Winform
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
+
+        List<string> carName = new List<string>();
+        List<string> carPath = new List<string>();
+        Home frmHome;
+        Sedan frmSedan;
+        All_CarClass frmAll;
+
+        Booking bk;
         public S_Class()
         {
             InitializeComponent();
@@ -45,7 +53,7 @@ namespace CuoiKy_Winform
             //S680.Image = Image.FromFile(pathS680_hau);
             //S65.Image = Image.FromFile(pathS65_hau);
         }
-        public S_Class(string parent_formname)
+        public S_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             S450.Image = Image.FromFile(pathS450);
@@ -60,13 +68,58 @@ namespace CuoiKy_Winform
             //S680.Image = Image.FromFile(pathS680_hau);
             //S65.Image = Image.FromFile(pathS65_hau);
 
-            parent_name = parent_formname;
+            parent_name = parent_form_name;
+
+            frmHome = parent;
+            carName = carname;
+            carPath = carpath;
         }
 
-        private void S450_Click(object sender, EventArgs e)
+        public S_Class(Sedan parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
+            InitializeComponent();
+            S450.Image = Image.FromFile(pathS450);
+            S500.Image = Image.FromFile(pathS500);
+            S600.Image = Image.FromFile(pathS600);
+            S680.Image = Image.FromFile(pathS680);
+            S65.Image = Image.FromFile(pathS65);
 
+            //S450.Image = Image.FromFile(pathS450_hau);
+            //S500.Image = Image.FromFile(pathS500_hau);
+            //S600.Image = Image.FromFile(pathS600_hau);
+            //S680.Image = Image.FromFile(pathS680_hau);
+            //S65.Image = Image.FromFile(pathS65_hau);
+
+            parent_name = parent_form_name;
+
+            frmSedan = parent;
+            carName = carname;
+            carPath = carpath;
         }
+
+        public S_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            S450.Image = Image.FromFile(pathS450);
+            S500.Image = Image.FromFile(pathS500);
+            S600.Image = Image.FromFile(pathS600);
+            S680.Image = Image.FromFile(pathS680);
+            S65.Image = Image.FromFile(pathS65);
+
+            //S450.Image = Image.FromFile(pathS450_hau);
+            //S500.Image = Image.FromFile(pathS500_hau);
+            //S600.Image = Image.FromFile(pathS600_hau);
+            //S680.Image = Image.FromFile(pathS680_hau);
+            //S65.Image = Image.FromFile(pathS65_hau);
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+
 
         private void pnlSClass_Paint(object sender, PaintEventArgs e)
         {
@@ -130,12 +183,73 @@ namespace CuoiKy_Winform
             }
         }
 
-        private void E_Class_FormClosing(object sender, FormClosingEventArgs e)
+        private void S_Class_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (parent_name == "Home")
-                new Home().Show();
-            else
-                new Sedan().Show();
+                frmHome.Show();
+            else if (parent_name == "Sedan")
+                frmSedan.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
+        }
+
+        private void S450_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("S450") == false)
+            {
+                carPath.Add(pathS450);
+                carName.Add("S450");
+
+                //carPath.Add(pathS450_hau);
+            }
+        }
+        private void S500_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("S500") == false)
+            {
+                carPath.Add(pathS500);
+                carName.Add("S500");
+
+                //carPath.Add(pathS450_hau);
+            }
+        }
+
+        private void S600_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("S600") == false)
+            {
+                carPath.Add(pathS600);
+                carName.Add("S600");
+
+                //carPath.Add(pathS450_hau);
+            }
+        }
+
+        private void S680_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("S680") == false)
+            {
+                carPath.Add(pathS680);
+                carName.Add("S680");
+
+                //carPath.Add(pathS450_hau);
+            }
+        }
+
+        private void S65_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("S65") == false)
+            {
+                carPath.Add(pathS65);
+                carName.Add("S65");
+
+                //carPath.Add(pathS450_hau);
+            }
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            new Booking(carName, carPath).Show();
         }
     }
     

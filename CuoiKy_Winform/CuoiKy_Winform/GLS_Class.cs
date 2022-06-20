@@ -25,6 +25,13 @@ namespace CuoiKy_Winform
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
 
+        List<string> carName = new List<string>();
+        List<string> carPath = new List<string>();
+        Home frmHome;
+        SUV frmSUV;
+        All_CarClass frmAll;
+
+        Booking bk;
         public GLS_Class()
         {
             InitializeComponent();
@@ -35,7 +42,7 @@ namespace CuoiKy_Winform
             //GLS400.Image = Image.FromFile(pathGLS400_hau);
             //GLS500.Image = Image.FromFile(pathGLS500_hau);
         }
-        public GLS_Class(string parent_formname)
+        public GLS_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLS400.Image = Image.FromFile(pathGLS400);
@@ -45,7 +52,45 @@ namespace CuoiKy_Winform
             //GLS400.Image = Image.FromFile(pathGLS400_hau);
             //GLS500.Image = Image.FromFile(pathGLS500_hau);
 
-            parent_name = parent_formname;
+            parent_name = parent_form_name;
+
+            frmHome = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public GLS_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            GLS400.Image = Image.FromFile(pathGLS400);
+            GLS500.Image = Image.FromFile(pathGLS500);
+
+
+            //GLS400.Image = Image.FromFile(pathGLS400_hau);
+            //GLS500.Image = Image.FromFile(pathGLS500_hau);
+
+            parent_name = parent_form_name;
+
+            frmSUV = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public GLS_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            GLS400.Image = Image.FromFile(pathGLS400);
+            GLS500.Image = Image.FromFile(pathGLS500);
+
+
+            //GLS400.Image = Image.FromFile(pathGLS400_hau);
+            //GLS500.Image = Image.FromFile(pathGLS500_hau);
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
+            carName = carname;
+            carPath = carpath;
         }
 
         private void GLS_Class_Load(object sender, EventArgs e)
@@ -103,9 +148,38 @@ namespace CuoiKy_Winform
         private void GLS_Class_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (parent_name == "Home")
-                new Home().Show();
-            else
-                new SUV().Show();
+                frmHome.Show();
+            else if (parent_name == "SUV")
+                frmSUV.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
+        }
+
+        private void GLS400_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("GLS400") == false)
+            {
+                carPath.Add(pathGLS400);
+                carName.Add("GLS400");
+
+               // carPath.Add(pathGLS400_hau);
+            }
+        }
+
+        private void GLS500_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("GLS500") == false)
+            {
+                carPath.Add(pathGLS500);
+                carName.Add("GLS500");
+
+                //carPath.Add(pathGLS500_hau);
+            }
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            new Booking(carName, carPath).Show();
         }
     }
 }

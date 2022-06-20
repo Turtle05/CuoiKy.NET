@@ -32,5 +32,7 @@ namespace CuoiKy_Winform
             this.Hide();
             new Home().Show();
         }
+
+        
     }
 }

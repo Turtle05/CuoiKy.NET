@@ -180,8 +180,7 @@ namespace CuoiKy_Winform
                 carPath.Add(pathA200);
                 carName.Add("A200");
 
-                //frmHome.carPath.Add(pathA200);
-                //frmHome.carName.Add("A200");
+                //carPath.Add(pathA200_hau);
             }
         }
 
@@ -191,6 +190,8 @@ namespace CuoiKy_Winform
             {
                 carPath.Add(pathA220);
                 carName.Add("A220");
+
+                //carPath.Add(pathA220_hau);
             }
         }
 
@@ -200,6 +201,8 @@ namespace CuoiKy_Winform
             {
                 carPath.Add(pathA45);
                 carName.Add("A45");
+
+                //carPath.Add(pathA45_hau);
             }
         }
         private void btnBooking_Click(object sender, EventArgs e)
