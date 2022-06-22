@@ -95,3 +95,22 @@ C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Deb
 C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.GLS_Class.resources
 C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.G_Class.resources
 C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.S_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.AMG_C_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.AMG_GT_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Booking.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.C_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.C_Coupe_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.EQB_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.EQS_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.E_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.E_Coupe_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.GLC_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.GLE_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.GLS_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.G_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.S_Class.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_Admin.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_Car.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_UserAccount.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_UserInfo.resources
+C:\Users\Admin\OneDrive - The University of Technology\Tài liệu\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Form_EditInfo.resources

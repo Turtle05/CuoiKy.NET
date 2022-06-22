@@ -20,9 +20,13 @@ namespace CuoiKy_Winform
         string pathE300_Coupe_hau = "C:\\Users\\Hau\\Documents\\GitHub\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E300 Coupe.jpg";
         string pathE400_Coupe_hau = "C:\\Users\\Hau\\Documents\\GitHub\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E400 Coupe.jpg";
 
+        string pathE300_Coupe_ngo = "C:\\Users\\Admin\\OneDrive - The University of Technology\\Tài liệu\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E300 Coupe.jpg";
+        string pathE400_Coupe_ngo = "C:\\Users\\Admin\\OneDrive - The University of Technology\\Tài liệu\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E400 Coupe.jpg";
+
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
+        string strConn3 = @"data source = MUNKY\SQLEXPRESS; Database = ShopOTo; Integrated Security = True";
         public E_Coupe_Class()
         {
             InitializeComponent();
@@ -30,8 +34,11 @@ namespace CuoiKy_Winform
             //E400_Coupe.Image = Image.FromFile(pathE400_Coupe);
 
 
-            E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
-            E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
+            //E300_Coupe.Image = Image.FromFile(pathE300_Coupe_hau);
+            //E400_Coupe.Image = Image.FromFile(pathE400_Coupe_hau);
+
+            E300_Coupe.Image = Image.FromFile(pathE300_Coupe_ngo);
+            E400_Coupe.Image = Image.FromFile(pathE400_Coupe_ngo);
         }
 
         private void E_Coupe_Class_Load(object sender, EventArgs e)
@@ -46,8 +53,18 @@ namespace CuoiKy_Winform
             //command.CommandText = "Car_Details";
             //command.Connection = conn;
 
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
+
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn3);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 

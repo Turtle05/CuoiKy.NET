@@ -21,6 +21,7 @@ namespace CuoiKy_Winform
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
 
+
         public EQS_Class()
         {
             InitializeComponent();
