@@ -30,10 +30,23 @@ namespace CuoiKy_Winform
             frmCover = parent;
         }
 
+        string strConn3 = @"data source = MUNKY\SQLEXPRESS; Database = ShopOTo; Integrated Security = True";
+
+
         private SqlDataReader ExecuteConnection(string str_SP)
         {
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = str_SP;
+            //command.Connection = conn;
+
             if (conn == null)
-                conn = new SqlConnection(strConn);
+                conn = new SqlConnection(strConn3);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -47,8 +60,18 @@ namespace CuoiKy_Winform
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Check_Email";
+            //command.Connection = conn;
+
             if (conn == null)
-                conn = new SqlConnection(strConn);
+                conn = new SqlConnection(strConn3);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
