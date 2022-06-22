@@ -42,6 +42,7 @@ namespace CuoiKy_Winform
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lbForgotPass = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -104,6 +105,7 @@ namespace CuoiKy_Winform
             // txtEmail
             // 
             this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.Location = new System.Drawing.Point(75, 263);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
@@ -113,10 +115,11 @@ namespace CuoiKy_Winform
             // txtPassword
             // 
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtPassword.Location = new System.Drawing.Point(75, 399);
-            this.txtPassword.Multiline = true;
+            this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(75, 403);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(352, 36);
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(352, 23);
             this.txtPassword.TabIndex = 9;
             // 
             // lbMessage
@@ -172,12 +175,25 @@ namespace CuoiKy_Winform
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lbForgotPass
+            // 
+            this.lbForgotPass.AutoSize = true;
+            this.lbForgotPass.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbForgotPass.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbForgotPass.Location = new System.Drawing.Point(18, 457);
+            this.lbForgotPass.Name = "lbForgotPass";
+            this.lbForgotPass.Size = new System.Drawing.Size(153, 22);
+            this.lbForgotPass.TabIndex = 11;
+            this.lbForgotPass.Text = "Forgot password?";
+            this.lbForgotPass.Click += new System.EventHandler(this.lbForgotPass_Click);
+            // 
             // Form_SignIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(446, 673);
+            this.Controls.Add(this.lbForgotPass);
             this.Controls.Add(this.lbMessage);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtEmail);
@@ -216,5 +232,6 @@ namespace CuoiKy_Winform
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.Label lbMessage;
         private System.Windows.Forms.Button btnSignIn;
+        private System.Windows.Forms.Label lbForgotPass;
     }
 }

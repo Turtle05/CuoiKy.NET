@@ -66,10 +66,9 @@ namespace CuoiKy_Winform
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Stencil", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(192, 97);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(288, 149);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 35);
+            this.label1.Size = new System.Drawing.Size(198, 52);
             this.label1.TabIndex = 2;
             this.label1.Text = "SIGN UP";
             // 
@@ -78,10 +77,9 @@ namespace CuoiKy_Winform
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(26, 138);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(39, 212);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 19);
+            this.label2.Size = new System.Drawing.Size(151, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "Member name";
             // 
@@ -90,10 +88,9 @@ namespace CuoiKy_Winform
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(26, 178);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(39, 274);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 19);
+            this.label3.Size = new System.Drawing.Size(85, 28);
             this.label3.TabIndex = 4;
             this.label3.Text = "Gender";
             // 
@@ -102,10 +99,9 @@ namespace CuoiKy_Winform
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(26, 218);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(39, 335);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 19);
+            this.label4.Size = new System.Drawing.Size(127, 28);
             this.label4.TabIndex = 5;
             this.label4.Text = "Nationality";
             // 
@@ -114,10 +110,9 @@ namespace CuoiKy_Winform
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(26, 257);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(39, 395);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 19);
+            this.label5.Size = new System.Drawing.Size(92, 28);
             this.label5.TabIndex = 6;
             this.label5.Text = "Address";
             // 
@@ -126,10 +121,9 @@ namespace CuoiKy_Winform
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(26, 311);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(39, 478);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 19);
+            this.label6.Size = new System.Drawing.Size(154, 28);
             this.label6.TabIndex = 7;
             this.label6.Text = "Phone number";
             // 
@@ -138,10 +132,9 @@ namespace CuoiKy_Winform
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(26, 384);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(39, 591);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(48, 19);
+            this.label7.Size = new System.Drawing.Size(69, 28);
             this.label7.TabIndex = 8;
             this.label7.Text = "Email";
             // 
@@ -150,82 +143,79 @@ namespace CuoiKy_Winform
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(26, 430);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(39, 662);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 19);
+            this.label8.Size = new System.Drawing.Size(103, 28);
             this.label8.TabIndex = 9;
             this.label8.Text = "Password";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel1.Location = new System.Drawing.Point(35, 350);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(52, 538);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(450, 1);
+            this.panel1.Size = new System.Drawing.Size(675, 2);
             this.panel1.TabIndex = 10;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(159, 138);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(238, 212);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(327, 23);
+            this.txtName.Size = new System.Drawing.Size(488, 33);
             this.txtName.TabIndex = 11;
             // 
             // txtNationality
             // 
-            this.txtNationality.Location = new System.Drawing.Point(159, 218);
-            this.txtNationality.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNationality.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNationality.Location = new System.Drawing.Point(238, 335);
             this.txtNationality.Multiline = true;
             this.txtNationality.Name = "txtNationality";
-            this.txtNationality.Size = new System.Drawing.Size(327, 25);
+            this.txtNationality.Size = new System.Drawing.Size(488, 36);
             this.txtNationality.TabIndex = 11;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(159, 260);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.Location = new System.Drawing.Point(238, 400);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(327, 40);
+            this.txtAddress.Size = new System.Drawing.Size(488, 59);
             this.txtAddress.TabIndex = 11;
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(159, 314);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPhone.Location = new System.Drawing.Point(238, 483);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(327, 20);
+            this.txtPhone.Size = new System.Drawing.Size(732, 45);
             this.txtPhone.TabIndex = 11;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(160, 387);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEmail.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(240, 595);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(327, 20);
+            this.txtEmail.Size = new System.Drawing.Size(486, 26);
             this.txtEmail.TabIndex = 11;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(159, 433);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(238, 666);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(327, 20);
+            this.txtPassword.Size = new System.Drawing.Size(488, 26);
             this.txtPassword.TabIndex = 11;
             // 
             // chbNam
             // 
             this.chbNam.AutoSize = true;
             this.chbNam.Font = new System.Drawing.Font("Poor Richard", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbNam.Location = new System.Drawing.Point(159, 181);
-            this.chbNam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbNam.Location = new System.Drawing.Point(238, 278);
             this.chbNam.Name = "chbNam";
-            this.chbNam.Size = new System.Drawing.Size(55, 21);
+            this.chbNam.Size = new System.Drawing.Size(75, 27);
             this.chbNam.TabIndex = 12;
             this.chbNam.Text = "Nam\r\n";
             this.chbNam.UseVisualStyleBackColor = true;
@@ -234,10 +224,9 @@ namespace CuoiKy_Winform
             // 
             this.chbNu.AutoSize = true;
             this.chbNu.Font = new System.Drawing.Font("Poor Richard", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbNu.Location = new System.Drawing.Point(274, 181);
-            this.chbNu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbNu.Location = new System.Drawing.Point(411, 278);
             this.chbNu.Name = "chbNu";
-            this.chbNu.Size = new System.Drawing.Size(46, 21);
+            this.chbNu.Size = new System.Drawing.Size(59, 27);
             this.chbNu.TabIndex = 13;
             this.chbNu.Text = "Nữ";
             this.chbNu.UseVisualStyleBackColor = true;
@@ -246,11 +235,10 @@ namespace CuoiKy_Winform
             // 
             this.lbMessage.AutoSize = true;
             this.lbMessage.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMessage.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lbMessage.Location = new System.Drawing.Point(150, 364);
-            this.lbMessage.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbMessage.ForeColor = System.Drawing.Color.Red;
+            this.lbMessage.Location = new System.Drawing.Point(225, 560);
             this.lbMessage.Name = "lbMessage";
-            this.lbMessage.Size = new System.Drawing.Size(0, 16);
+            this.lbMessage.Size = new System.Drawing.Size(0, 22);
             this.lbMessage.TabIndex = 14;
             // 
             // label10
@@ -258,10 +246,9 @@ namespace CuoiKy_Winform
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label10.Location = new System.Drawing.Point(490, 387);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label10.Location = new System.Drawing.Point(735, 595);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 17);
+            this.label10.Size = new System.Drawing.Size(0, 25);
             this.label10.TabIndex = 15;
             // 
             // label11
@@ -269,10 +256,9 @@ namespace CuoiKy_Winform
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label11.Location = new System.Drawing.Point(490, 433);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label11.Location = new System.Drawing.Point(735, 666);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(0, 17);
+            this.label11.Size = new System.Drawing.Size(0, 25);
             this.label11.TabIndex = 15;
             // 
             // btnSignUp
@@ -280,10 +266,9 @@ namespace CuoiKy_Winform
             this.btnSignUp.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnSignUp.Font = new System.Drawing.Font("Sitka Subheading", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(133, 523);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignUp.Location = new System.Drawing.Point(200, 805);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(270, 38);
+            this.btnSignUp.Size = new System.Drawing.Size(405, 58);
             this.btnSignUp.TabIndex = 16;
             this.btnSignUp.Text = "SIGN UP";
             this.btnSignUp.UseVisualStyleBackColor = false;
@@ -295,10 +280,9 @@ namespace CuoiKy_Winform
             this.lbClearField.BackColor = System.Drawing.Color.Transparent;
             this.lbClearField.Font = new System.Drawing.Font("Sitka Display", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbClearField.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbClearField.Location = new System.Drawing.Point(331, 502);
-            this.lbClearField.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbClearField.Location = new System.Drawing.Point(496, 772);
             this.lbClearField.Name = "lbClearField";
-            this.lbClearField.Size = new System.Drawing.Size(75, 20);
+            this.lbClearField.Size = new System.Drawing.Size(108, 29);
             this.lbClearField.TabIndex = 17;
             this.lbClearField.Text = "Clear fields";
             this.lbClearField.Click += new System.EventHandler(this.lbClearField_Click);
@@ -309,10 +293,9 @@ namespace CuoiKy_Winform
             this.lbExit.BackColor = System.Drawing.Color.Transparent;
             this.lbExit.Font = new System.Drawing.Font("Sitka Display", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbExit.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lbExit.Location = new System.Drawing.Point(243, 571);
-            this.lbExit.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbExit.Location = new System.Drawing.Point(364, 878);
             this.lbExit.Name = "lbExit";
-            this.lbExit.Size = new System.Drawing.Size(44, 28);
+            this.lbExit.Size = new System.Drawing.Size(65, 40);
             this.lbExit.TabIndex = 17;
             this.lbExit.Text = "Exit";
             this.lbExit.Click += new System.EventHandler(this.lbExit_Click);
@@ -321,20 +304,19 @@ namespace CuoiKy_Winform
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 470);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Location = new System.Drawing.Point(39, 723);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(133, 19);
+            this.label9.Size = new System.Drawing.Size(191, 28);
             this.label9.TabIndex = 18;
             this.label9.Text = "Confirm Password";
             // 
             // txtComfirmpass
             // 
-            this.txtComfirmpass.Location = new System.Drawing.Point(159, 471);
-            this.txtComfirmpass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtComfirmpass.Font = new System.Drawing.Font("Times New Roman", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComfirmpass.Location = new System.Drawing.Point(238, 725);
             this.txtComfirmpass.Name = "txtComfirmpass";
             this.txtComfirmpass.PasswordChar = '*';
-            this.txtComfirmpass.Size = new System.Drawing.Size(327, 20);
+            this.txtComfirmpass.Size = new System.Drawing.Size(488, 26);
             this.txtComfirmpass.TabIndex = 11;
             // 
             // label12
@@ -342,29 +324,27 @@ namespace CuoiKy_Winform
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label12.Location = new System.Drawing.Point(490, 470);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label12.Location = new System.Drawing.Point(735, 723);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(0, 17);
+            this.label12.Size = new System.Drawing.Size(0, 25);
             this.label12.TabIndex = 15;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::CuoiKy_Winform.Properties.Resources.tải_xuống1;
-            this.pictureBox1.Location = new System.Drawing.Point(211, 16);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(316, 25);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(130, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // Form_SignUp
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(519, 605);
+            this.ClientSize = new System.Drawing.Size(778, 931);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lbExit);
             this.Controls.Add(this.lbClearField);
@@ -393,7 +373,6 @@ namespace CuoiKy_Winform
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form_SignUp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sign Up";

@@ -24,6 +24,7 @@ namespace CuoiKy_Winform
 
         List<string> carName = new List<string>();
         List<string> carPath = new List<string>();
+        string member_id;
         Home frmHome;
         SUV frmSUV;
         All_CarClass frmAll;
@@ -39,12 +40,14 @@ namespace CuoiKy_Winform
 
         }
 
-        public EQB_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public EQB_Class(Home parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             EQB.Image = Image.FromFile(pathEQB);
 
             //EQB.Image = Image.FromFile(pathEQB_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -53,15 +56,34 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public EQB_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public EQB_Class(SUV parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             EQB.Image = Image.FromFile(pathEQB);
 
             //EQB.Image = Image.FromFile(pathEQB_hau);
+
+            member_id = memberid;
+
             parent_name = parent_form_name;
 
             frmSUV = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public EQB_Class(All_CarClass parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            EQB.Image = Image.FromFile(pathEQB);
+
+            //EQB.Image = Image.FromFile(pathEQB_hau);
+
+            member_id = memberid;
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
             carName = carname;
             carPath = carpath;
         }
@@ -146,7 +168,7 @@ namespace CuoiKy_Winform
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            new Booking(carName, carPath).Show();
+            new Booking(member_id, carName, carPath).Show();
         }
     }
 }

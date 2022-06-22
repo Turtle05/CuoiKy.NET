@@ -28,6 +28,7 @@ namespace CuoiKy_Winform
 
         List<string> carName = new List<string>();
         List<string> carPath = new List<string>();
+        string member_id;
         Home frmHome;
         SUV frmSUV;
         All_CarClass frmAll;
@@ -42,10 +43,9 @@ namespace CuoiKy_Winform
 
             //G400.Image = Image.FromFile(pathG400_hau);
             //G63.Image = Image.FromFile(pathG63_hau);
-
         }
 
-        public G_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public G_Class(Home parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             G400.Image = Image.FromFile(pathG400);
@@ -54,6 +54,8 @@ namespace CuoiKy_Winform
 
             //G400.Image = Image.FromFile(pathG400_hau);
             //G63.Image = Image.FromFile(pathG63_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -62,7 +64,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public G_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public G_Class(SUV parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             G400.Image = Image.FromFile(pathG400);
@@ -71,6 +73,9 @@ namespace CuoiKy_Winform
 
             //G400.Image = Image.FromFile(pathG400_hau);
             //G63.Image = Image.FromFile(pathG63_hau);
+
+            member_id = memberid;
+
             parent_name = parent_form_name;
 
             frmSUV = parent;
@@ -78,6 +83,24 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
+        public G_Class(All_CarClass parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            G400.Image = Image.FromFile(pathG400);
+            G63.Image = Image.FromFile(pathG63);
+
+
+            //G400.Image = Image.FromFile(pathG400_hau);
+            //G63.Image = Image.FromFile(pathG63_hau);
+
+            member_id = memberid;
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
+            carName = carname;
+            carPath = carpath;
+        }
 
         private void G_Class_Load(object sender, EventArgs e)
         {
@@ -165,7 +188,7 @@ namespace CuoiKy_Winform
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            new Booking(carName, carPath).Show();
+            new Booking(member_id, carName, carPath).Show();
         }
     }
 }

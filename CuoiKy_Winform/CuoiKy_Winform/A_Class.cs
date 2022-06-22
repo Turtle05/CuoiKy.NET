@@ -28,6 +28,7 @@ namespace CuoiKy_Winform
 
         List<string> carName = new List<string>();
         List<string> carPath = new List<string>();
+        string member_id;
         Home frmHome;
         Sedan frmSedan;
         All_CarClass frmAll;
@@ -46,7 +47,7 @@ namespace CuoiKy_Winform
             //A45.Image = Image.FromFile(pathA45_hau);
         }
 
-        public A_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public A_Class(Home parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             A200.Image = Image.FromFile(pathA200);
@@ -56,6 +57,8 @@ namespace CuoiKy_Winform
             //A200.Image = Image.FromFile(pathA200_hau);
             //A220.Image = Image.FromFile(pathA220_hau);
             //A45.Image = Image.FromFile(pathA45_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -64,7 +67,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public A_Class(Sedan parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public A_Class(Sedan parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             A200.Image = Image.FromFile(pathA200);
@@ -74,6 +77,8 @@ namespace CuoiKy_Winform
             //A200.Image = Image.FromFile(pathA200_hau);
             //A220.Image = Image.FromFile(pathA220_hau);
             //A45.Image = Image.FromFile(pathA45_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -82,7 +87,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public A_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public A_Class(All_CarClass parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             A200.Image = Image.FromFile(pathA200);
@@ -92,6 +97,8 @@ namespace CuoiKy_Winform
             //A200.Image = Image.FromFile(pathA200_hau);
             //A220.Image = Image.FromFile(pathA220_hau);
             //A45.Image = Image.FromFile(pathA45_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -207,7 +214,7 @@ namespace CuoiKy_Winform
         }
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            new Booking(carName, carPath).Show();
+            new Booking(member_id, carName, carPath).Show();
         }
     }
 }

@@ -17,7 +17,7 @@ namespace CuoiKy_Winform
             InitializeComponent();
         }
 
-        private void cover_Load(object sender, EventArgs e)
+        private void Cover_Load(object sender, EventArgs e)
         {
             lbWelcome.Parent = pictureBox1;
             lbWelcome.BackColor = Color.Transparent;
@@ -31,13 +31,13 @@ namespace CuoiKy_Winform
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            new Form_SignIn().Show();
+            new Form_SignIn(this).Show();
             this.Hide();
         }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            new Form_SignUp().Show();
+            new Form_SignUp(this).Show();
             this.Hide();
         }
 

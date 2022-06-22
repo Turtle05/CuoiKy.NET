@@ -27,6 +27,7 @@ namespace CuoiKy_Winform
 
         List<string> carName = new List<string>();
         List<string> carPath = new List<string>();
+        string member_id;
         Home frmHome;
         SUV frmSUV;
         All_CarClass frmAll;
@@ -42,7 +43,7 @@ namespace CuoiKy_Winform
             //GLS400.Image = Image.FromFile(pathGLS400_hau);
             //GLS500.Image = Image.FromFile(pathGLS500_hau);
         }
-        public GLS_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public GLS_Class(Home parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLS400.Image = Image.FromFile(pathGLS400);
@@ -51,6 +52,8 @@ namespace CuoiKy_Winform
 
             //GLS400.Image = Image.FromFile(pathGLS400_hau);
             //GLS500.Image = Image.FromFile(pathGLS500_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -59,7 +62,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public GLS_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public GLS_Class(SUV parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLS400.Image = Image.FromFile(pathGLS400);
@@ -68,6 +71,8 @@ namespace CuoiKy_Winform
 
             //GLS400.Image = Image.FromFile(pathGLS400_hau);
             //GLS500.Image = Image.FromFile(pathGLS500_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -76,7 +81,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public GLS_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public GLS_Class(All_CarClass parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLS400.Image = Image.FromFile(pathGLS400);
@@ -85,6 +90,8 @@ namespace CuoiKy_Winform
 
             //GLS400.Image = Image.FromFile(pathGLS400_hau);
             //GLS500.Image = Image.FromFile(pathGLS500_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -179,7 +186,7 @@ namespace CuoiKy_Winform
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            new Booking(carName, carPath).Show();
+            new Booking(member_id, carName, carPath).Show();
         }
     }
 }

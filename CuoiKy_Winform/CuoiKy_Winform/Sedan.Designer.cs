@@ -37,17 +37,17 @@ namespace CuoiKy_Winform
             this.lbEQSClass = new System.Windows.Forms.Label();
             this.lbSClass = new System.Windows.Forms.Label();
             this.lbAClass = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pcbE_Class = new System.Windows.Forms.PictureBox();
+            this.pcbEQS_Class = new System.Windows.Forms.PictureBox();
+            this.pcbS_Class = new System.Windows.Forms.PictureBox();
+            this.pcbC_Class = new System.Windows.Forms.PictureBox();
+            this.pcbA_Class = new System.Windows.Forms.PictureBox();
             this.grbSedan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbE_Class)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEQS_Class)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbS_Class)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbC_Class)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbA_Class)).BeginInit();
             this.SuspendLayout();
             // 
             // grbSedan
@@ -58,11 +58,11 @@ namespace CuoiKy_Winform
             this.grbSedan.Controls.Add(this.lbEQSClass);
             this.grbSedan.Controls.Add(this.lbSClass);
             this.grbSedan.Controls.Add(this.lbAClass);
-            this.grbSedan.Controls.Add(this.pictureBox3);
-            this.grbSedan.Controls.Add(this.pictureBox5);
-            this.grbSedan.Controls.Add(this.pictureBox4);
-            this.grbSedan.Controls.Add(this.pictureBox2);
-            this.grbSedan.Controls.Add(this.pictureBox1);
+            this.grbSedan.Controls.Add(this.pcbE_Class);
+            this.grbSedan.Controls.Add(this.pcbEQS_Class);
+            this.grbSedan.Controls.Add(this.pcbS_Class);
+            this.grbSedan.Controls.Add(this.pcbC_Class);
+            this.grbSedan.Controls.Add(this.pcbA_Class);
             this.grbSedan.Font = new System.Drawing.Font("Script MT Bold", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbSedan.Location = new System.Drawing.Point(12, 11);
             this.grbSedan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -141,60 +141,65 @@ namespace CuoiKy_Winform
             this.lbAClass.Text = "A - Class";
             this.lbAClass.Click += new System.EventHandler(this.lbAClass_Click);
             // 
-            // pictureBox3
+            // pcbE_Class
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(718, 42);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(252, 175);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.pcbE_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbE_Class.Image")));
+            this.pcbE_Class.Location = new System.Drawing.Point(718, 42);
+            this.pcbE_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbE_Class.Name = "pcbE_Class";
+            this.pcbE_Class.Size = new System.Drawing.Size(252, 175);
+            this.pcbE_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbE_Class.TabIndex = 0;
+            this.pcbE_Class.TabStop = false;
+            this.pcbE_Class.Click += new System.EventHandler(this.pcbE_Class_Click);
             // 
-            // pictureBox5
+            // pcbEQS_Class
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(380, 303);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(276, 175);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.pcbEQS_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbEQS_Class.Image")));
+            this.pcbEQS_Class.Location = new System.Drawing.Point(380, 303);
+            this.pcbEQS_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbEQS_Class.Name = "pcbEQS_Class";
+            this.pcbEQS_Class.Size = new System.Drawing.Size(276, 175);
+            this.pcbEQS_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbEQS_Class.TabIndex = 0;
+            this.pcbEQS_Class.TabStop = false;
+            this.pcbEQS_Class.Click += new System.EventHandler(this.pcbEQS_Class_Click);
             // 
-            // pictureBox4
+            // pcbS_Class
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(46, 303);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(266, 175);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.pcbS_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbS_Class.Image")));
+            this.pcbS_Class.Location = new System.Drawing.Point(46, 303);
+            this.pcbS_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbS_Class.Name = "pcbS_Class";
+            this.pcbS_Class.Size = new System.Drawing.Size(266, 175);
+            this.pcbS_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbS_Class.TabIndex = 0;
+            this.pcbS_Class.TabStop = false;
+            this.pcbS_Class.Click += new System.EventHandler(this.pcbS_Class_Click);
             // 
-            // pictureBox2
+            // pcbC_Class
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(380, 42);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(276, 175);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pcbC_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbC_Class.Image")));
+            this.pcbC_Class.Location = new System.Drawing.Point(380, 42);
+            this.pcbC_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbC_Class.Name = "pcbC_Class";
+            this.pcbC_Class.Size = new System.Drawing.Size(276, 175);
+            this.pcbC_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbC_Class.TabIndex = 0;
+            this.pcbC_Class.TabStop = false;
+            this.pcbC_Class.Click += new System.EventHandler(this.pcbC_Class_Click);
             // 
-            // pictureBox1
+            // pcbA_Class
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(46, 42);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(266, 175);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pcbA_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbA_Class.Image")));
+            this.pcbA_Class.Location = new System.Drawing.Point(46, 42);
+            this.pcbA_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbA_Class.Name = "pcbA_Class";
+            this.pcbA_Class.Size = new System.Drawing.Size(266, 175);
+            this.pcbA_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbA_Class.TabIndex = 0;
+            this.pcbA_Class.TabStop = false;
+            this.pcbA_Class.Click += new System.EventHandler(this.pcbA_Class_Click);
             // 
             // Sedan
             // 
@@ -209,11 +214,11 @@ namespace CuoiKy_Winform
             this.Text = "Sedan";
             this.grbSedan.ResumeLayout(false);
             this.grbSedan.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbE_Class)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEQS_Class)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbS_Class)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbC_Class)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbA_Class)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -224,13 +229,13 @@ namespace CuoiKy_Winform
         private System.Windows.Forms.Label lbEClass;
         private System.Windows.Forms.Label lbCClass;
         private System.Windows.Forms.Label lbAClass;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pcbE_Class;
+        private System.Windows.Forms.PictureBox pcbC_Class;
+        private System.Windows.Forms.PictureBox pcbA_Class;
         private System.Windows.Forms.Label lbEQSClass;
         private System.Windows.Forms.Label lbSClass;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pcbEQS_Class;
+        private System.Windows.Forms.PictureBox pcbS_Class;
         private System.Windows.Forms.Button btnExit;
     }
 }

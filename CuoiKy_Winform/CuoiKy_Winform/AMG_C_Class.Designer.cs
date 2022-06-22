@@ -30,6 +30,7 @@ namespace CuoiKy_Winform
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AMG_C_Class));
             this.lbAMG_CClass = new System.Windows.Forms.Label();
             this.pnlAMG_CClass = new System.Windows.Forms.Panel();
             this.lbAMG_C63 = new System.Windows.Forms.Label();
@@ -107,12 +108,15 @@ namespace CuoiKy_Winform
             // 
             // btnBooking
             // 
+            this.btnBooking.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnBooking.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.ForeColor = System.Drawing.Color.White;
             this.btnBooking.Location = new System.Drawing.Point(889, 9);
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(209, 38);
             this.btnBooking.TabIndex = 7;
             this.btnBooking.Text = "Booking";
-            this.btnBooking.UseVisualStyleBackColor = true;
+            this.btnBooking.UseVisualStyleBackColor = false;
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // AMG_C_Class
@@ -124,8 +128,10 @@ namespace CuoiKy_Winform
             this.Controls.Add(this.btnBooking);
             this.Controls.Add(this.pnlAMG_CClass);
             this.Controls.Add(this.lbAMG_CClass);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "AMG_C_Class";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AMG_C_Class";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AMG_C_Class_FormClosing);
             this.Load += new System.EventHandler(this.AMG_C_Class_Load);
