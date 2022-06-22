@@ -130,9 +130,8 @@ values ('EQB', 'EQB Class', 'SUV');
 
 -- Insert into car
 insert into car
-values ('A200','Sedan','A',N'Trắng',4,N'Xăng',1399000000,N'Mercedes-benz A200.Chiều dài cơ sở: 4199 (mm).Dung tích xi lanh: 1595 (cc).Dung tích bình nhiên liệu: 50 (litre)',10);
-insert into car
-values ('A220','Sedan','A',N'Trắng',4,N'Xăng',1699000000,N'Mercedes-benz A220.Chiều dài cơ sở: 4299 (mm).Dung tích xi lanh: 1991 (cc).Dung tích bình nhiên liệu: 50/6 (litre)',10),
+values ('A200','Sedan','A',N'Trắng',4,N'Xăng',1399000000,N'Mercedes-benz A200.Chiều dài cơ sở: 4199 (mm).Dung tích xi lanh: 1595 (cc).Dung tích bình nhiên liệu: 50 (litre)',10),
+('A220','Sedan','A',N'Trắng',4,N'Xăng',1699000000,N'Mercedes-benz A220.Chiều dài cơ sở: 4299 (mm).Dung tích xi lanh: 1991 (cc).Dung tích bình nhiên liệu: 50/6 (litre)',10),
 ('A45','Sedan','A',N'Trắng',5,N'Xăng',2249000000,N'Mercedes-benz A45.Chiều dài cơ sở: 4299 (mm).Dung tích xi lanh: 1991 (cc).Dung tích bình nhiên liệu: 50 (litre)',10),
 ('C43','Sedan','C',N'Trắng',5,N'Xăng',2249000000,N'Mercedes-benz C43.Chiều dài cơ sở: 4299 (mm).Dung tích xi lanh: 2996 (cc).Dung tích bình nhiên liệu: 66 (litre)',10),
 ('C200','Sedan','C',N'Trắng',5,N'Xăng',1499000000,N'Mercedes-benz C200.Chiều dài cơ sở: 4686 (mm).Dung tích xi lanh: 1497 (cc).Dung tích bình nhiên liệu: 60 (litre)',10),
@@ -159,10 +158,10 @@ values ('EQS','Sedan','E',N'Trắng',5,N'Điện',2399000000,N'Mercedes-benz EQS
 ('G400','SUV','G',N'Xanh',5,N'Xăng',4050000000,N'Mercedes-benz AMG G400.Chiều dài cơ sở: 5207 (mm).Dung tích xi lanh: 2999 (cc).Dung tích bình nhiên liệu: 90 (litre)',10),
 ('G63','SUV','G',N'Trắng',5,N'Xăng',10950000000,N'Mercedes-benz AMG G63.Chiều dài cơ sở: 4874 (mm).Dung tích xi lanh: 3982 (cc).Dung tích bình nhiên liệu: 100 (litre)',10),
 ('EQB','SUV','EQB',N'Trắng',7,N'Điện',2399000000,N'Mercedes-benz EQB.Chiều dài cơ sở: 4634 (mm).Phạm vi hoạt động: 419 (km)',10),
-('AMG_GT2','Coupe','AMG-GT',N'Xanh',2,N'Xăng',4050000000,N'Mercedes-benz AMG-GT.Chiều dài cơ sở: 4544 (mm).Dung tích xi lanh: 2999 (cc).Dung tích bình nhiên liệu: 90 (litre)',10),
-('AMG_GT4','Coupe','AMG-GT',N'Xanh',4,N'Xăng',6719000000,N'Mercedes-benz AMG-GT.Chiều dài cơ sở: 4874 (mm).Dung tích xi lanh: 3982 (cc).Dung tích bình nhiên liệu: 100 (litre)',10),
-('AMG_C43','Coupe','AMG-C',N'Đen',2,N'Xăng',4150000000,N'Mercedes-benz AMG C43.Chiều dài cơ sở: 4669 (mm).Dung tích xi lanh: 2996 (cc).Dung tích bình nhiên liệu: 66 (litre)',10),
-('AMG_C63','Coupe','AMG-C',N'Trắng',2,N'Xăng',4678000000,N'Mercedes-benz AMG C63.Chiều dài cơ sở: 4757 (mm).Dung tích xi lanh: 3982 (cc).Dung tích bình nhiên liệu: 66 (litre)',10),
+('AMG_GT2','Coupe','AMG-GT',N'Xanh',2,N'Xăng',4050000000,N'Mercedes-benz AMG-GT2.Chiều dài cơ sở: 4544 (mm).Dung tích xi lanh: 2999 (cc).Dung tích bình nhiên liệu: 90 (litre)',10),
+('AMG_GT4','Coupe','AMG-GT',N'Xanh',4,N'Xăng',6719000000,N'Mercedes-benz AMG-GT4.Chiều dài cơ sở: 4874 (mm).Dung tích xi lanh: 3982 (cc).Dung tích bình nhiên liệu: 100 (litre)',10),
+('AMG_C43','Coupe','AMG-C',N'Đen',2,N'Xăng',4150000000,N'Mercedes-benz AMG-C43.Chiều dài cơ sở: 4669 (mm).Dung tích xi lanh: 2996 (cc).Dung tích bình nhiên liệu: 66 (litre)',10),
+('AMG_C63','Coupe','AMG-C',N'Trắng',2,N'Xăng',4678000000,N'Mercedes-benz AMG-C63.Chiều dài cơ sở: 4757 (mm).Dung tích xi lanh: 3982 (cc).Dung tích bình nhiên liệu: 66 (litre)',10),
 ('E300_Coupe','Coupe','E-Coupe',N'Trắng',2,N'Xăng',3099000000,N'Mercedes-benz E300 Coupe.Chiều dài cơ sở: 4826 (mm).Dung tích xi lanh: 2996 (cc).Dung tích bình nhiên liệu: 66 (litre)',10),
 ('E400_Coupe','Coupe','E-Coupe',N'Đỏ',2,N'Xăng',4678000000,N'Mercedes-benz E400 Coupe.Chiều dài cơ sở: 4757 (mm).Dung tích xi lanh: 3982 (cc).Dung tích bình nhiên liệu: 66 (litre)',10),
 ('C200_Coupe','Coupe','C-Coupe',N'Xanh',2,N'Xăng',2517000000,N'Mercedes-benz C200 Coupe.Chiều dài cơ sở: 4696 (mm).Dung tích xi lanh: 2996 (cc).Dung tích bình nhiên liệu: 66 (litre)',10),

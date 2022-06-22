@@ -13,13 +13,24 @@ namespace CuoiKy_Winform
 {
     public partial class Form_SignUp : Form
     {
+        string member_id;
+        Cover frmCover;
+
+        SqlConnection conn = null;
+        string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
+        string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
+
         public Form_SignUp()
         {
             InitializeComponent();
         }
 
-        SqlConnection conn = null;
-        string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
+        public Form_SignUp(Cover parent)
+        {
+            InitializeComponent();
+
+            frmCover = parent;
+        }
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
@@ -44,20 +55,33 @@ namespace CuoiKy_Winform
 
             SqlCommand command1 = new SqlCommand();
             int check = 0;
+            bool validEmail = true;
             if (txtEmail.Text == "")
             {
                 label10.Text = "*";
                 lbMessage.Text = "";
             }
+            else if (txtEmail.Text.Contains('@') != true)
+            {
+                validEmail = false;
+                lbMessage.Text = "Your email don't have '@' character. Try again";
+            }    
             else if (txtPassword.Text == "")
                 label11.Text = "*";
+            else if (txtPassword.Text.Length <= 6)
+            {
+                lbMessage.Text = "Password must longer than 6 characters!";
+                txtPassword.Clear(); txtComfirmpass.Clear();
+                txtPassword.Focus();
+            }
             else if (txtComfirmpass.Text == "")
                 label12.Text = "*";
             else if (txtPassword.Text != txtComfirmpass.Text)
-                MessageBox.Show("Confirm password do not match!");
+                MessageBox.Show("Confirm password do not match!", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
             else
             {
-                if (txtEmail.Text.Contains('@')) // Kiểm tra email hợp lệ hay không
+                validEmail = true;
+                if (validEmail == true) // Kiểm tra email hợp lệ hay không
                 {
                     command1.CommandType = CommandType.StoredProcedure;
                     command1.CommandText = "Check_Email";
@@ -79,11 +103,6 @@ namespace CuoiKy_Winform
                         check = 1;
                     reader.Close();
                 }
-                else // Nếu email không hợp lệ
-                {
-                    check = 0;
-                    lbMessage.Text = "Your email don't have '@' character. Try again";
-                }
 
                 if (check == 1) // Nếu tài khoản chưa trùng
                 {
@@ -92,9 +111,22 @@ namespace CuoiKy_Winform
                     command.Parameters.Add("@email", SqlDbType.VarChar).Value = txtEmail.Text;
                     command.Parameters.Add("@pass", SqlDbType.VarChar).Value = txtPassword.Text;
                     command.Parameters.Add("@role", SqlDbType.VarChar).Value = "USER";
+
+                    SqlCommand command2 = new SqlCommand();
+                    command2.CommandType = CommandType.Text;
+                    command2.CommandText = "select count(*) from member";
+                    command2.Connection = conn;
+
                     int ret = command.ExecuteNonQuery();
+                    int id = (int)command2.ExecuteScalar();
+                    member_id = id.ToString();
                     if (ret > 0)
-                        new Home().Show();
+                    {
+                        MessageBox.Show(member_id);
+                        MessageBox.Show("Sign up successfully!", "Notification", MessageBoxButtons.OK);
+                        new Home(member_id).Show();
+                        this.Close();
+                    }
                 }
             }
         }
@@ -112,6 +144,7 @@ namespace CuoiKy_Winform
 
         private void lbExit_Click(object sender, EventArgs e)
         {
+            frmCover.Show();
             this.Hide();
         }
     }

@@ -63,6 +63,16 @@ namespace CuoiKy_Winform.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _921329 {
+            get {
+                object obj = ResourceManager.GetObject("921329", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap A200 {
             get {
                 object obj = ResourceManager.GetObject("A200", resourceCulture);

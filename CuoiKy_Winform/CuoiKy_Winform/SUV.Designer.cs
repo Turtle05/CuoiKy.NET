@@ -37,17 +37,17 @@ namespace CuoiKy_Winform
             this.lbEQBClass = new System.Windows.Forms.Label();
             this.lbGClass = new System.Windows.Forms.Label();
             this.lbGLCClass = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pcbGLS_Class = new System.Windows.Forms.PictureBox();
+            this.pcbGLE_Class = new System.Windows.Forms.PictureBox();
+            this.pcbEQB_Class = new System.Windows.Forms.PictureBox();
+            this.pcbG_Class = new System.Windows.Forms.PictureBox();
+            this.pcbGLC_Class = new System.Windows.Forms.PictureBox();
             this.grbSUV.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbGLS_Class)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbGLE_Class)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEQB_Class)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbG_Class)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbGLC_Class)).BeginInit();
             this.SuspendLayout();
             // 
             // grbSUV
@@ -58,11 +58,11 @@ namespace CuoiKy_Winform
             this.grbSUV.Controls.Add(this.lbEQBClass);
             this.grbSUV.Controls.Add(this.lbGClass);
             this.grbSUV.Controls.Add(this.lbGLCClass);
-            this.grbSUV.Controls.Add(this.pictureBox4);
-            this.grbSUV.Controls.Add(this.pictureBox5);
-            this.grbSUV.Controls.Add(this.pictureBox2);
-            this.grbSUV.Controls.Add(this.pictureBox1);
-            this.grbSUV.Controls.Add(this.pictureBox6);
+            this.grbSUV.Controls.Add(this.pcbGLS_Class);
+            this.grbSUV.Controls.Add(this.pcbGLE_Class);
+            this.grbSUV.Controls.Add(this.pcbEQB_Class);
+            this.grbSUV.Controls.Add(this.pcbG_Class);
+            this.grbSUV.Controls.Add(this.pcbGLC_Class);
             this.grbSUV.Font = new System.Drawing.Font("Script MT Bold", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbSUV.Location = new System.Drawing.Point(16, 15);
             this.grbSUV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -141,60 +141,65 @@ namespace CuoiKy_Winform
             this.lbGLCClass.Text = "GLC - Class";
             this.lbGLCClass.Click += new System.EventHandler(this.lbGLCClass_Click);
             // 
-            // pictureBox4
+            // pcbGLS_Class
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(758, 42);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(267, 189);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 0;
-            this.pictureBox4.TabStop = false;
+            this.pcbGLS_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbGLS_Class.Image")));
+            this.pcbGLS_Class.Location = new System.Drawing.Point(758, 42);
+            this.pcbGLS_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbGLS_Class.Name = "pcbGLS_Class";
+            this.pcbGLS_Class.Size = new System.Drawing.Size(267, 189);
+            this.pcbGLS_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbGLS_Class.TabIndex = 0;
+            this.pcbGLS_Class.TabStop = false;
+            this.pcbGLS_Class.Click += new System.EventHandler(this.pcbGLS_Class_Click);
             // 
-            // pictureBox5
+            // pcbGLE_Class
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(393, 42);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(286, 189);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 0;
-            this.pictureBox5.TabStop = false;
+            this.pcbGLE_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbGLE_Class.Image")));
+            this.pcbGLE_Class.Location = new System.Drawing.Point(393, 42);
+            this.pcbGLE_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbGLE_Class.Name = "pcbGLE_Class";
+            this.pcbGLE_Class.Size = new System.Drawing.Size(286, 189);
+            this.pcbGLE_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbGLE_Class.TabIndex = 0;
+            this.pcbGLE_Class.TabStop = false;
+            this.pcbGLE_Class.Click += new System.EventHandler(this.pcbGLE_Class_Click);
             // 
-            // pictureBox2
+            // pcbEQB_Class
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(393, 317);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(286, 189);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            this.pcbEQB_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbEQB_Class.Image")));
+            this.pcbEQB_Class.Location = new System.Drawing.Point(393, 317);
+            this.pcbEQB_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbEQB_Class.Name = "pcbEQB_Class";
+            this.pcbEQB_Class.Size = new System.Drawing.Size(286, 189);
+            this.pcbEQB_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbEQB_Class.TabIndex = 0;
+            this.pcbEQB_Class.TabStop = false;
+            this.pcbEQB_Class.Click += new System.EventHandler(this.pcbEQB_Class_Click);
             // 
-            // pictureBox1
+            // pcbG_Class
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(34, 317);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(278, 189);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pcbG_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbG_Class.Image")));
+            this.pcbG_Class.Location = new System.Drawing.Point(34, 317);
+            this.pcbG_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbG_Class.Name = "pcbG_Class";
+            this.pcbG_Class.Size = new System.Drawing.Size(278, 189);
+            this.pcbG_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbG_Class.TabIndex = 0;
+            this.pcbG_Class.TabStop = false;
+            this.pcbG_Class.Click += new System.EventHandler(this.pcbG_Class_Click);
             // 
-            // pictureBox6
+            // pcbGLC_Class
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(34, 42);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(278, 189);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.pcbGLC_Class.Image = ((System.Drawing.Image)(resources.GetObject("pcbGLC_Class.Image")));
+            this.pcbGLC_Class.Location = new System.Drawing.Point(34, 42);
+            this.pcbGLC_Class.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pcbGLC_Class.Name = "pcbGLC_Class";
+            this.pcbGLC_Class.Size = new System.Drawing.Size(278, 189);
+            this.pcbGLC_Class.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbGLC_Class.TabIndex = 0;
+            this.pcbGLC_Class.TabStop = false;
+            this.pcbGLC_Class.Click += new System.EventHandler(this.pcbGLC_Class_Click);
             // 
             // SUV
             // 
@@ -209,11 +214,11 @@ namespace CuoiKy_Winform
             this.Text = "SUV";
             this.grbSUV.ResumeLayout(false);
             this.grbSUV.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbGLS_Class)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbGLE_Class)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbEQB_Class)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbG_Class)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbGLC_Class)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,12 +230,12 @@ namespace CuoiKy_Winform
         private System.Windows.Forms.Label lbGLEClass;
         private System.Windows.Forms.Label lbGClass;
         private System.Windows.Forms.Label lbGLCClass;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pcbGLS_Class;
+        private System.Windows.Forms.PictureBox pcbGLE_Class;
+        private System.Windows.Forms.PictureBox pcbG_Class;
+        private System.Windows.Forms.PictureBox pcbGLC_Class;
         private System.Windows.Forms.Label lbEQBClass;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pcbEQB_Class;
         private System.Windows.Forms.Button btnExit;
     }
 }

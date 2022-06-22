@@ -13,6 +13,7 @@ namespace CuoiKy_Winform
 {
     public partial class E_Class : Form
     {
+        string parent_name;
         string pathE200 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E200.jpg";
         string pathE300 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E300.jpg";
         string pathE350 = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\E350.jpg";
@@ -26,18 +27,93 @@ namespace CuoiKy_Winform
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
+
+        List<string> carName = new List<string>();
+        List<string> carPath = new List<string>();
+        string member_id;
+        Home frmHome;
+        Sedan frmSedan;
+        All_CarClass frmAll;
+
+        Booking bk;
+
         public E_Class()
         {
             InitializeComponent();
-            //E200.Image = Image.FromFile(pathE200);
-            //E300.Image = Image.FromFile(pathE300);
-            //E350.Image = Image.FromFile(pathE350);
-            //E43.Image = Image.FromFile(pathE43);
+            E200.Image = Image.FromFile(pathE200);
+            E300.Image = Image.FromFile(pathE300);
+            E350.Image = Image.FromFile(pathE350);
+            E43.Image = Image.FromFile(pathE43);
 
-            E200.Image = Image.FromFile(pathE200_hau);
-            E300.Image = Image.FromFile(pathE300_hau);
-            E350.Image = Image.FromFile(pathE350_hau);
-            E43.Image = Image.FromFile(pathE43_hau);
+            //E200.Image = Image.FromFile(pathE200_hau);
+            //E300.Image = Image.FromFile(pathE300_hau);
+            //E350.Image = Image.FromFile(pathE350_hau);
+            //E43.Image = Image.FromFile(pathE43_hau);
+        }
+        public E_Class(Home parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            E200.Image = Image.FromFile(pathE200);
+            E300.Image = Image.FromFile(pathE300);
+            E350.Image = Image.FromFile(pathE350);
+            E43.Image = Image.FromFile(pathE43);
+
+            //E200.Image = Image.FromFile(pathE200_hau);
+            //E300.Image = Image.FromFile(pathE300_hau);
+            //E350.Image = Image.FromFile(pathE350_hau);
+            //E43.Image = Image.FromFile(pathE43_hau);
+
+            member_id = memberid;
+
+            parent_name = parent_form_name;
+
+            frmHome = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public E_Class(Sedan parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            E200.Image = Image.FromFile(pathE200);
+            E300.Image = Image.FromFile(pathE300);
+            E350.Image = Image.FromFile(pathE350);
+            E43.Image = Image.FromFile(pathE43);
+
+            //E200.Image = Image.FromFile(pathE200_hau);
+            //E300.Image = Image.FromFile(pathE300_hau);
+            //E350.Image = Image.FromFile(pathE350_hau);
+            //E43.Image = Image.FromFile(pathE43_hau);
+
+            member_id = memberid;
+
+            parent_name = parent_form_name;
+
+            frmSedan = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public E_Class(All_CarClass parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            E200.Image = Image.FromFile(pathE200);
+            E300.Image = Image.FromFile(pathE300);
+            E350.Image = Image.FromFile(pathE350);
+            E43.Image = Image.FromFile(pathE43);
+
+            //E200.Image = Image.FromFile(pathE200_hau);
+            //E300.Image = Image.FromFile(pathE300_hau);
+            //E350.Image = Image.FromFile(pathE350_hau);
+            //E43.Image = Image.FromFile(pathE43_hau);
+
+            member_id = memberid;
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
+            carName = carname;
+            carPath = carpath;
         }
 
         private void lbEClass_Click(object sender, EventArgs e)
@@ -47,18 +123,8 @@ namespace CuoiKy_Winform
 
         private void E_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -66,6 +132,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -95,6 +171,65 @@ namespace CuoiKy_Winform
                 reader.Close();
                 command.Parameters.Clear();
             }
+        }
+
+        private void E_Class_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (parent_name == "Home")
+                frmHome.Show();
+            else if (parent_name == "Sedan")
+                frmSedan.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
+        }
+
+        private void E200_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("E200") == false)
+            {
+                carPath.Add(pathE200);
+                carName.Add("E200");
+
+               // carPath.Add(pathE200_hau);
+            }
+        }
+
+        private void E300_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("E300") == false)
+            {
+                carPath.Add(pathE300);
+                carName.Add("E300");
+
+                //carPath.Add(pathE300_hau);
+            }
+        }
+
+        private void E350_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("E350") == false)
+            {
+                carPath.Add(pathE350);
+                carName.Add("E350");
+
+                //carPath.Add(pathE350_hau);
+            }
+        }
+
+        private void E43_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("E43") == false)
+            {
+                carPath.Add(pathE43);
+                carName.Add("E43");
+
+               // carPath.Add(pathE43_hau);
+            }
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            new Booking(member_id, carName, carPath).Show();
         }
     }
 }

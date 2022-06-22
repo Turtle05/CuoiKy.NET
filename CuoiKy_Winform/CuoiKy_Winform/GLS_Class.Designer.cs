@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GLS_Class));
             this.lbGLSClass = new System.Windows.Forms.Label();
             this.pnlGLSClass = new System.Windows.Forms.Panel();
+            this.lbGLS500 = new System.Windows.Forms.Label();
+            this.lbGLS400 = new System.Windows.Forms.Label();
             this.GLS500 = new System.Windows.Forms.PictureBox();
             this.GLS400 = new System.Windows.Forms.PictureBox();
-            this.lbGLS400 = new System.Windows.Forms.Label();
-            this.lbGLS500 = new System.Windows.Forms.Label();
+            this.btnBooking = new System.Windows.Forms.Button();
             this.pnlGLSClass.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GLS500)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GLS400)).BeginInit();
@@ -43,9 +45,9 @@
             // 
             this.lbGLSClass.Font = new System.Drawing.Font("MV Boli", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGLSClass.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbGLSClass.Location = new System.Drawing.Point(19, 6);
+            this.lbGLSClass.Location = new System.Drawing.Point(21, 8);
             this.lbGLSClass.Name = "lbGLSClass";
-            this.lbGLSClass.Size = new System.Drawing.Size(163, 37);
+            this.lbGLSClass.Size = new System.Drawing.Size(183, 46);
             this.lbGLSClass.TabIndex = 2;
             this.lbGLSClass.Text = "GLS Class";
             // 
@@ -56,60 +58,81 @@
             this.pnlGLSClass.Controls.Add(this.lbGLS400);
             this.pnlGLSClass.Controls.Add(this.GLS500);
             this.pnlGLSClass.Controls.Add(this.GLS400);
-            this.pnlGLSClass.Location = new System.Drawing.Point(11, 44);
+            this.pnlGLSClass.Location = new System.Drawing.Point(12, 55);
             this.pnlGLSClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlGLSClass.Name = "pnlGLSClass";
-            this.pnlGLSClass.Size = new System.Drawing.Size(959, 423);
+            this.pnlGLSClass.Size = new System.Drawing.Size(1079, 529);
             this.pnlGLSClass.TabIndex = 3;
-            // 
-            // GLS500
-            // 
-            this.GLS500.Image = global::CuoiKy_Winform.Properties.Resources.GLS500;
-            this.GLS500.Location = new System.Drawing.Point(40, 242);
-            this.GLS500.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GLS500.Name = "GLS500";
-            this.GLS500.Size = new System.Drawing.Size(258, 160);
-            this.GLS500.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.GLS500.TabIndex = 0;
-            this.GLS500.TabStop = false;
-            // 
-            // GLS400
-            // 
-            this.GLS400.Image = global::CuoiKy_Winform.Properties.Resources.GLS400;
-            this.GLS400.Location = new System.Drawing.Point(40, 15);
-            this.GLS400.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.GLS400.Name = "GLS400";
-            this.GLS400.Size = new System.Drawing.Size(258, 160);
-            this.GLS400.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.GLS400.TabIndex = 0;
-            this.GLS400.TabStop = false;
-            // 
-            // lbGLS400
-            // 
-            this.lbGLS400.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGLS400.Location = new System.Drawing.Point(341, 15);
-            this.lbGLS400.Name = "lbGLS400";
-            this.lbGLS400.Size = new System.Drawing.Size(600, 160);
-            this.lbGLS400.TabIndex = 6;
             // 
             // lbGLS500
             // 
             this.lbGLS500.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGLS500.Location = new System.Drawing.Point(341, 242);
+            this.lbGLS500.Location = new System.Drawing.Point(384, 302);
             this.lbGLS500.Name = "lbGLS500";
-            this.lbGLS500.Size = new System.Drawing.Size(600, 160);
+            this.lbGLS500.Size = new System.Drawing.Size(675, 200);
             this.lbGLS500.TabIndex = 6;
+            // 
+            // lbGLS400
+            // 
+            this.lbGLS400.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGLS400.Location = new System.Drawing.Point(384, 19);
+            this.lbGLS400.Name = "lbGLS400";
+            this.lbGLS400.Size = new System.Drawing.Size(675, 200);
+            this.lbGLS400.TabIndex = 6;
+            // 
+            // GLS500
+            // 
+            this.GLS500.Image = global::CuoiKy_Winform.Properties.Resources.GLS500;
+            this.GLS500.Location = new System.Drawing.Point(45, 302);
+            this.GLS500.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GLS500.Name = "GLS500";
+            this.GLS500.Size = new System.Drawing.Size(290, 200);
+            this.GLS500.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GLS500.TabIndex = 0;
+            this.GLS500.TabStop = false;
+            this.GLS500.Click += new System.EventHandler(this.GLS500_Click);
+            // 
+            // GLS400
+            // 
+            this.GLS400.Image = global::CuoiKy_Winform.Properties.Resources.GLS400;
+            this.GLS400.Location = new System.Drawing.Point(45, 19);
+            this.GLS400.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GLS400.Name = "GLS400";
+            this.GLS400.Size = new System.Drawing.Size(290, 200);
+            this.GLS400.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.GLS400.TabIndex = 0;
+            this.GLS400.TabStop = false;
+            this.GLS400.Click += new System.EventHandler(this.GLS400_Click);
+            // 
+            // btnBooking
+            // 
+            this.btnBooking.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnBooking.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.ForeColor = System.Drawing.Color.White;
+            this.btnBooking.Location = new System.Drawing.Point(882, 8);
+            this.btnBooking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBooking.Name = "btnBooking";
+            this.btnBooking.Size = new System.Drawing.Size(209, 38);
+            this.btnBooking.TabIndex = 9;
+            this.btnBooking.Text = "Booking";
+            this.btnBooking.UseVisualStyleBackColor = false;
+            this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // GLS_Class
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1008, 475);
+            this.ClientSize = new System.Drawing.Size(1134, 594);
+            this.Controls.Add(this.btnBooking);
             this.Controls.Add(this.pnlGLSClass);
             this.Controls.Add(this.lbGLSClass);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "GLS_Class";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GLS_Class";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GLS_Class_FormClosing);
             this.Load += new System.EventHandler(this.GLS_Class_Load);
             this.pnlGLSClass.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GLS500)).EndInit();
@@ -126,5 +149,6 @@
         private System.Windows.Forms.PictureBox GLS400;
         private System.Windows.Forms.Label lbGLS500;
         private System.Windows.Forms.Label lbGLS400;
+        private System.Windows.Forms.Button btnBooking;
     }
 }

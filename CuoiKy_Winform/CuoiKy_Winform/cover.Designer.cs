@@ -46,7 +46,7 @@ namespace CuoiKy_Winform
             this.lbWelcome.ForeColor = System.Drawing.Color.RoyalBlue;
             this.lbWelcome.Location = new System.Drawing.Point(198, 9);
             this.lbWelcome.Name = "lbWelcome";
-            this.lbWelcome.Size = new System.Drawing.Size(699, 76);
+            this.lbWelcome.Size = new System.Drawing.Size(1049, 114);
             this.lbWelcome.TabIndex = 1;
             this.lbWelcome.Text = "Welcome to Mercedes Showroom";
             // 
@@ -56,7 +56,7 @@ namespace CuoiKy_Winform
             this.btnSignIn.FlatAppearance.BorderSize = 0;
             this.btnSignIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignIn.Font = new System.Drawing.Font("Mongolian Baiti", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.btnSignIn.ForeColor = System.Drawing.Color.BlueViolet;
             this.btnSignIn.Location = new System.Drawing.Point(888, 464);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(156, 54);
@@ -71,7 +71,7 @@ namespace CuoiKy_Winform
             this.btnSignUp.FlatAppearance.BorderSize = 0;
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUp.Font = new System.Drawing.Font("Mongolian Baiti", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignUp.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.btnSignUp.ForeColor = System.Drawing.Color.BlueViolet;
             this.btnSignUp.Location = new System.Drawing.Point(888, 524);
             this.btnSignUp.Name = "btnSignUp";
             this.btnSignUp.Size = new System.Drawing.Size(156, 54);
@@ -86,7 +86,7 @@ namespace CuoiKy_Winform
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Mongolian Baiti", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.DarkOrchid;
+            this.btnExit.ForeColor = System.Drawing.Color.BlueViolet;
             this.btnExit.Location = new System.Drawing.Point(888, 584);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(156, 42);
@@ -119,7 +119,7 @@ namespace CuoiKy_Winform
             this.Name = "Cover";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mercedes Car";
-            this.Load += new System.EventHandler(this.cover_Load);
+            this.Load += new System.EventHandler(this.Cover_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

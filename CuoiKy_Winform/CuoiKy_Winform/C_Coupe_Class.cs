@@ -13,6 +13,7 @@ namespace CuoiKy_Winform
 {
     public partial class C_Coupe_Class : Form
     {
+        string parent_name;
         string pathC200_Coupe = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\C200 Coupe.jpg";
         string pathC300_Coupe = "C:\\Users\\ADMIN\\Documents\\GitHub\\CuoiKy.NET\\CuoiKy_Winform\\CuoiKy_Winform\\Resources\\C300 Coupe.jpg";
     
@@ -22,31 +23,65 @@ namespace CuoiKy_Winform
         SqlConnection conn = null;
         string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
         string strConn2 = @"data source=HAUTRI\SQLEXPRESS; Initial Catalog = ShopOTo; Integrated Security = True";
+
+        List<string> carName = new List<string>();
+        List<string> carPath = new List<string>();
+        string member_id;
+        Home frmHome;
+        Coupe frmCoupe;
+        All_CarClass frmAll;
+
+        Booking bk;
+
         public C_Coupe_Class()
         {
             InitializeComponent();
-            //C200_Coupe.Image = Image.FromFile(pathC200_Coupe);
-            //C300_Coupe.Image = Image.FromFile(pathC300_Coupe);
+            C200_Coupe.Image = Image.FromFile(pathC200_Coupe);
+            C300_Coupe.Image = Image.FromFile(pathC300_Coupe);
 
-            C200_Coupe.Image = Image.FromFile(pathC200_Coupe_hau);
-            C300_Coupe.Image = Image.FromFile(pathC300_Coupe_hau);
+            //C200_Coupe.Image = Image.FromFile(pathC200_Coupe_hau);
+            //C300_Coupe.Image = Image.FromFile(pathC300_Coupe_hau);
+        }
+        public C_Coupe_Class(Coupe parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            C200_Coupe.Image = Image.FromFile(pathC200_Coupe);
+            C300_Coupe.Image = Image.FromFile(pathC300_Coupe);
 
+            //C200_Coupe.Image = Image.FromFile(pathC200_Coupe_hau);
+            //C300_Coupe.Image = Image.FromFile(pathC300_Coupe_hau);
+
+            member_id = memberid;
+
+            parent_name = parent_form_name;
+
+            frmCoupe = parent;
+            carName = carname;
+            carPath = carpath;
+        }
+
+        public C_Coupe_Class(All_CarClass parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
+        {
+            InitializeComponent();
+            C200_Coupe.Image = Image.FromFile(pathC200_Coupe);
+            C300_Coupe.Image = Image.FromFile(pathC300_Coupe);
+
+            //C200_Coupe.Image = Image.FromFile(pathC200_Coupe_hau);
+            //C300_Coupe.Image = Image.FromFile(pathC300_Coupe_hau);
+
+            member_id = memberid;
+
+            parent_name = parent_form_name;
+
+            frmAll = parent;
+            carName = carname;
+            carPath = carpath;
         }
 
         private void C_Coupe_Class_Load(object sender, EventArgs e)
         {
-            //if (conn == null)
-            //    conn = new SqlConnection(strConn);
-            //if (conn.State == ConnectionState.Closed)
-            //    conn.Open();
-
-            //SqlCommand command = new SqlCommand();
-            //command.CommandType = CommandType.StoredProcedure;
-            //command.CommandText = "Car_Details";
-            //command.Connection = conn;
-
             if (conn == null)
-                conn = new SqlConnection(strConn2);
+                conn = new SqlConnection(strConn);
             if (conn.State == ConnectionState.Closed)
                 conn.Open();
 
@@ -54,6 +89,16 @@ namespace CuoiKy_Winform
             command.CommandType = CommandType.StoredProcedure;
             command.CommandText = "Car_Details";
             command.Connection = conn;
+
+            //if (conn == null)
+            //    conn = new SqlConnection(strConn2);
+            //if (conn.State == ConnectionState.Closed)
+            //    conn.Open();
+
+            //SqlCommand command = new SqlCommand();
+            //command.CommandType = CommandType.StoredProcedure;
+            //command.CommandText = "Car_Details";
+            //command.Connection = conn;
 
             // List PictureBox & Label
             List<PictureBox> lstpcb = new List<PictureBox>();
@@ -83,6 +128,43 @@ namespace CuoiKy_Winform
                 reader.Close();
                 command.Parameters.Clear();
             }
+        }
+
+        private void C_Coupe_Class_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (parent_name == "Home")
+                frmHome.Show();
+            else if (parent_name == "Coupe")
+                frmCoupe.Show();
+            else if (parent_name == "All_CarClass")
+                frmAll.Show();
+        }
+
+        private void C200_Coupe_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("C200_Coupe") == false)
+            {
+                carPath.Add(pathC200_Coupe);
+                carName.Add("C200_Coupe");
+
+               // carPath.Add(pathC200_Coupe_hau);
+            }
+        }
+
+        private void C300_Coupe_Click(object sender, EventArgs e)
+        {
+            if (carName.Contains("C300_Coupe") == false)
+            {
+                carPath.Add(pathC300_Coupe);
+                carName.Add("C300_Coupe");
+
+                //carPath.Add(pathC300_Coupe_hau);
+            }
+        }
+
+        private void btnBooking_Click(object sender, EventArgs e)
+        {
+            new Booking(member_id, carName, carPath).Show();
         }
     }
 }
