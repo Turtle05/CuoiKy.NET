@@ -132,12 +132,15 @@
             // 
             // btnBooking
             // 
+            this.btnBooking.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnBooking.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.ForeColor = System.Drawing.Color.White;
             this.btnBooking.Location = new System.Drawing.Point(910, 9);
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(209, 38);
             this.btnBooking.TabIndex = 4;
             this.btnBooking.Text = "Booking";
-            this.btnBooking.UseVisualStyleBackColor = true;
+            this.btnBooking.UseVisualStyleBackColor = false;
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // C_Class
@@ -152,6 +155,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "C_Class";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "C_Class";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.C_Class_FormClosing);
             this.Load += new System.EventHandler(this.C_Class_Load);

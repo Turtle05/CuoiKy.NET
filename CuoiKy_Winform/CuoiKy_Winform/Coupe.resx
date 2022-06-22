@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pcbE_Coupe_Class.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAgICAgICAkKCgkMDQwNDBIQDw8QEhsTFRMVExspGR4ZGR4Z
         KSQsJCEkLCRBMy0tM0FLPzw/S1tRUVtybHKVlcn/2wBDAQgICAgICAkKCgkMDQwNDBIQDw8QEhsTFRMV
@@ -677,7 +677,7 @@
         iFFehZmpvFN4pvFN4b03pvGN4xvGN4xmxmxmxmxbFsZsXzzs6e8//9k=
 </value>
   </data>
-  <data name="pictureBox8.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pcbAMGC_Class.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwNDBEaEBMQEBMQ
         GhcbFhUWGxcpIBwcICkvJyUnLzkzMzlHREddXX3/2wBDAQUFBQUFBQUGBgUICAcICAsKCQkKCxEMDQwN
@@ -2453,7 +2453,7 @@
         rGMY7Dsd2VxL9CQhCEIQhCEKwhCEIQhCEIQv9nr/AOqj/9k=
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pcbC_Coupe_Class.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/4QBURXhpZgAATU0AKgAAAAgAAYKYAAIAAAAxAAAAGgAAAABwcmVz
         cyBwaG90bywgZG8gbm90IHVzZSBmb3IgYWR2ZXJ0aXNpbmcgcHVycG9zZXMAAP/bAEMACgcHCAcGCggI
@@ -6866,7 +6866,7 @@
         fiQI0kg5EohMJncD+f6LmqTWzFkEYEojhZvamRlT/RQhKn0VNer/2Q==
 </value>
   </data>
-  <data name="pictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pcbAMGGT_Class.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEBLAEsAAD/4QBORXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKG
         AAcAAAAYAAAALAAAAAAyADAAQwAwADMANwA5AF8AMAAwADUAAAAAAP/bAEMAAQEBAQEBAQEBAQEBAQEB

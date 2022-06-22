@@ -97,3 +97,6 @@ C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Deb
 C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.S_Class.resources
 C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Payment.resources
 C:\Users\Hau\Documents\GitHub\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Payment.resources
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.ChangePass.resources
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.Profile.resources
+C:\Users\ADMIN\Documents\GitHub\CuoiKy.NET\CuoiKy_Winform\CuoiKy_Winform\obj\Debug\CuoiKy_Winform.ForgotPass.resources

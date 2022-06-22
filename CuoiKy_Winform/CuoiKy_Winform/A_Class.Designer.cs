@@ -59,7 +59,7 @@ namespace CuoiKy_Winform
             this.pnlAClass.Location = new System.Drawing.Point(6, 58);
             this.pnlAClass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnlAClass.Name = "pnlAClass";
-            this.pnlAClass.Size = new System.Drawing.Size(1129, 490);
+            this.pnlAClass.Size = new System.Drawing.Size(1103, 493);
             this.pnlAClass.TabIndex = 2;
             // 
             // lbA45
@@ -134,12 +134,15 @@ namespace CuoiKy_Winform
             // 
             // btnBooking
             // 
-            this.btnBooking.Location = new System.Drawing.Point(902, 8);
+            this.btnBooking.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnBooking.Font = new System.Drawing.Font("Modern No. 20", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBooking.ForeColor = System.Drawing.Color.White;
+            this.btnBooking.Location = new System.Drawing.Point(875, 11);
             this.btnBooking.Name = "btnBooking";
             this.btnBooking.Size = new System.Drawing.Size(209, 38);
             this.btnBooking.TabIndex = 3;
             this.btnBooking.Text = "Booking";
-            this.btnBooking.UseVisualStyleBackColor = true;
+            this.btnBooking.UseVisualStyleBackColor = false;
             this.btnBooking.Click += new System.EventHandler(this.btnBooking_Click);
             // 
             // A_Class
@@ -147,7 +150,7 @@ namespace CuoiKy_Winform
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1153, 575);
+            this.ClientSize = new System.Drawing.Size(1132, 563);
             this.Controls.Add(this.btnBooking);
             this.Controls.Add(this.pnlAClass);
             this.Controls.Add(this.lbAClass);

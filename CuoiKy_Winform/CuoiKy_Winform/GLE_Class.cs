@@ -28,6 +28,7 @@ namespace CuoiKy_Winform
 
         List<string> carName = new List<string>();
         List<string> carPath = new List<string>();
+        string member_id;
         Home frmHome;
         SUV frmSUV;
         All_CarClass frmAll;
@@ -45,7 +46,7 @@ namespace CuoiKy_Winform
             //GLE500.Image = Image.FromFile(pathGLE500_hau);
         }
 
-        public GLE_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public GLE_Class(Home parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLE300.Image = Image.FromFile(pathGLE300);
@@ -55,6 +56,8 @@ namespace CuoiKy_Winform
             //GLE300.Image = Image.FromFile(pathGLE300_hau);
             //GLE400.Image = Image.FromFile(pathGLE400_hau);
             //GLE500.Image = Image.FromFile(pathGLE500_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -63,7 +66,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public GLE_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public GLE_Class(SUV parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLE300.Image = Image.FromFile(pathGLE300);
@@ -73,6 +76,8 @@ namespace CuoiKy_Winform
             //GLE300.Image = Image.FromFile(pathGLE300_hau);
             //GLE400.Image = Image.FromFile(pathGLE400_hau);
             //GLE500.Image = Image.FromFile(pathGLE500_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -81,7 +86,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public GLE_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public GLE_Class(All_CarClass parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLE300.Image = Image.FromFile(pathGLE300);
@@ -91,6 +96,8 @@ namespace CuoiKy_Winform
             //GLE300.Image = Image.FromFile(pathGLE300_hau);
             //GLE400.Image = Image.FromFile(pathGLE400_hau);
             //GLE500.Image = Image.FromFile(pathGLE500_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -195,7 +202,7 @@ namespace CuoiKy_Winform
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            new Booking(carName, carPath).Show();
+            new Booking(member_id, carName, carPath).Show();
         }
     }
     

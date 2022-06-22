@@ -9,10 +9,11 @@ namespace CuoiKy_Winform
 {
     class BookingItem : FlowLayoutPanel
     {
-        public int MyProperty { get; set; }
+        public string car_Path { get; set; }
 
         public PictureBox pcbcar { get; set; }
         public Label lb_info { get; set; }
+        public Label lb_soluong { get; set; }
         public NumericUpDown nud { get; set; }
         public CheckBox cb { get; set; }
 

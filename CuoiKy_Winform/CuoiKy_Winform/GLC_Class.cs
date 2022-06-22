@@ -28,6 +28,7 @@ namespace CuoiKy_Winform
 
         List<string> carName = new List<string>();
         List<string> carPath = new List<string>();
+        string member_id;
         Home frmHome;
         SUV frmSUV;
         All_CarClass frmAll;
@@ -43,11 +44,9 @@ namespace CuoiKy_Winform
             //GLC300.Image = Image.FromFile(pathGLC300_hau);
             //GLC350.Image = Image.FromFile(pathGLC350_hau);
             //GLC400.Image = Image.FromFile(pathGLC400_hau);
-
-       
         }
 
-        public GLC_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public GLC_Class(Home parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLC300.Image = Image.FromFile(pathGLC300);
@@ -57,6 +56,8 @@ namespace CuoiKy_Winform
             //GLC300.Image = Image.FromFile(pathGLC300_hau);
             //GLC350.Image = Image.FromFile(pathGLC350_hau);
             //GLC400.Image = Image.FromFile(pathGLC400_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -65,7 +66,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public GLC_Class(SUV parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public GLC_Class(SUV parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLC300.Image = Image.FromFile(pathGLC300);
@@ -75,6 +76,8 @@ namespace CuoiKy_Winform
             //GLC300.Image = Image.FromFile(pathGLC300_hau);
             //GLC350.Image = Image.FromFile(pathGLC350_hau);
             //GLC400.Image = Image.FromFile(pathGLC400_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -83,7 +86,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public GLC_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public GLC_Class(All_CarClass parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             GLC300.Image = Image.FromFile(pathGLC300);
@@ -93,6 +96,9 @@ namespace CuoiKy_Winform
             //GLC300.Image = Image.FromFile(pathGLC300_hau);
             //GLC350.Image = Image.FromFile(pathGLC350_hau);
             //GLC400.Image = Image.FromFile(pathGLC400_hau);
+
+            member_id = memberid;
+
             parent_name = parent_form_name;
 
             frmAll = parent;
@@ -197,7 +203,7 @@ namespace CuoiKy_Winform
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            new Booking(carName, carPath).Show();
+            new Booking(member_id, carName, carPath).Show();
         }
     }
     

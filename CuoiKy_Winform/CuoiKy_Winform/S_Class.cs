@@ -33,6 +33,7 @@ namespace CuoiKy_Winform
 
         List<string> carName = new List<string>();
         List<string> carPath = new List<string>();
+        string member_id;
         Home frmHome;
         Sedan frmSedan;
         All_CarClass frmAll;
@@ -53,7 +54,7 @@ namespace CuoiKy_Winform
             //S680.Image = Image.FromFile(pathS680_hau);
             //S65.Image = Image.FromFile(pathS65_hau);
         }
-        public S_Class(Home parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public S_Class(Home parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             S450.Image = Image.FromFile(pathS450);
@@ -67,6 +68,8 @@ namespace CuoiKy_Winform
             //S600.Image = Image.FromFile(pathS600_hau);
             //S680.Image = Image.FromFile(pathS680_hau);
             //S65.Image = Image.FromFile(pathS65_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -75,7 +78,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public S_Class(Sedan parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public S_Class(Sedan parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             S450.Image = Image.FromFile(pathS450);
@@ -89,6 +92,8 @@ namespace CuoiKy_Winform
             //S600.Image = Image.FromFile(pathS600_hau);
             //S680.Image = Image.FromFile(pathS680_hau);
             //S65.Image = Image.FromFile(pathS65_hau);
+
+            member_id = memberid;
 
             parent_name = parent_form_name;
 
@@ -97,7 +102,7 @@ namespace CuoiKy_Winform
             carPath = carpath;
         }
 
-        public S_Class(All_CarClass parent, string parent_form_name, List<string> carname, List<string> carpath)
+        public S_Class(All_CarClass parent, string memberid, string parent_form_name, List<string> carname, List<string> carpath)
         {
             InitializeComponent();
             S450.Image = Image.FromFile(pathS450);
@@ -112,23 +117,13 @@ namespace CuoiKy_Winform
             //S680.Image = Image.FromFile(pathS680_hau);
             //S65.Image = Image.FromFile(pathS65_hau);
 
+            member_id = memberid;
+
             parent_name = parent_form_name;
 
             frmAll = parent;
             carName = carname;
             carPath = carpath;
-        }
-
-
-
-        private void pnlSClass_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void rtxtS680_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void S_Class_Load(object sender, EventArgs e)
@@ -249,7 +244,7 @@ namespace CuoiKy_Winform
 
         private void btnBooking_Click(object sender, EventArgs e)
         {
-            new Booking(carName, carPath).Show();
+            new Booking(member_id, carName, carPath).Show();
         }
     }
     

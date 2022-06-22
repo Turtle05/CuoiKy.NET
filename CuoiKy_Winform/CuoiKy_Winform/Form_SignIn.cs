@@ -13,13 +13,22 @@ namespace CuoiKy_Winform
 {
     public partial class Form_SignIn : Form
     {
+        SqlConnection conn = null;
+        string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
+        string member_id;
+        Cover frmCover;
+
         public Form_SignIn()
         {
             InitializeComponent();
         }
 
-        SqlConnection conn = null;
-        string strConn = @"SERVER= DESKTOP-9D12B9G\SQLEXPRESS; Database=ShopOTo; User Id = sa; pwd=12345";
+        public Form_SignIn(Cover parent)
+        {
+            InitializeComponent();
+
+            frmCover = parent;
+        }
 
         private SqlDataReader ExecuteConnection(string str_SP)
         {
@@ -55,10 +64,12 @@ namespace CuoiKy_Winform
             SqlDataReader reader = command.ExecuteReader();
             if (reader.Read())
             {
-                if (reader.GetString(0) == txtPassword.Text)
-                {
-                    new Home().Show();
+                if (reader.GetString(1) == txtPassword.Text)
+                {    
+                    member_id = reader.GetInt32(0).ToString();
+                    new Home(member_id).Show();
                     this.Hide();
+                    reader.Close();
                 }
                 else
                 {
@@ -66,6 +77,7 @@ namespace CuoiKy_Winform
                     txtEmail.Clear();
                     txtPassword.Clear();
                     txtEmail.Focus();
+                    reader.Close();
                 }
             }
             else
@@ -74,8 +86,8 @@ namespace CuoiKy_Winform
                 txtEmail.Clear();
                 txtPassword.Clear();
                 txtEmail.Focus();
+                reader.Close();
             }
-            reader.Close();
         }
 
         private void lbClearField_Click(object sender, EventArgs e)
@@ -87,6 +99,13 @@ namespace CuoiKy_Winform
 
         private void lbExit_Click(object sender, EventArgs e)
         {
+            frmCover.Show();
+            this.Hide();
+        }
+
+        private void lbForgotPass_Click(object sender, EventArgs e)
+        {
+            new ForgotPass().Show();
             this.Hide();
         }
     }
